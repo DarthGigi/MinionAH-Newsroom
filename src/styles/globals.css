@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    @apply select-none;
+  }
+
+  video {
+    @apply pointer-events-none;
+  }
+}
