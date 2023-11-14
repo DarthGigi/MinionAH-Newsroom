@@ -21,45 +21,21 @@ const posts = (await getCollection("blog")).filter((post) => post.data.isPublic 
         <div class="mx-auto tracking-tight leading-6 max-w-[341px] sm:max-w-[366px] md:max-w-[692px] xl:max-w-[980px]">
           <h2 class="mb-6 text-3xl font-bold tracking-normal">Latest News</h2>
           <ul style="--gap:1rem;" class="flex flex-grow-0 gap-[var(--gap)] flex-shrink-0 justify-center lg:justify-between items-stretch p-0 m-0 tracking-tight leading-6 text-left [flex-flow:_row_wrap] [content:'']">
-            <style>
-              #firstCard {
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                z-index: 0;
-                border-radius: 10px;
-              }
-              #firstCard::before {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 250%;
-                z-index: 0;
-                background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.77311) 12.83%, rgba(0, 0, 0, 0.72685) 24%, rgba(0, 0, 0, 0.66487) 33.77%, rgba(0, 0, 0, 0.59081) 42.37%, rgba(0, 0, 0, 0.50831) 50.07%, rgba(0, 0, 0, 0.421) 57.13%, rgba(0, 0, 0, 0.33252) 63.78%, rgba(0, 0, 0, 0.24652) 70.3%, rgba(0, 0, 0, 0.16663) 76.92%, rgba(0, 0, 0, 0.09648) 83.91%, rgba(0, 0, 0, 0.03973) 91.52%, rgba(0, 0, 0, 0));
-                background-size: 100.1% 100.1%;
-                border-radius: 10px;
-              }
-            </style>
             {
               posts.map((post, index) => {
                 if (index === 0) {
                   // Apply first post styles
                   return (
-                    <li class="h-[426px] w-[341px] sm:h-[457px] sm:w-[366px] md:h-[389px] md:w-[692px] xl:h-[551px] xl:w-[980px] relative list-none m-0 p-0 block bg-slate-600 rounded-xl  ">
-                      <a href={`/${post.slug}/`} class="w-full visited:no-underline group h-full block relative group-hover:hover:[text-decoration:none] hover:[text-decoration:none]">
-                        <div class="relative overflow-hidden h-full w-full rounded-[10px]">
-                          <div style={`background: url('${post.data.heroImage}') no-repeat top; background-size: cover; height: 100%;`} class="h-full w-full group-hover:scale-105 overflow-hidden transition-all duration-500 rounded-[10px]" />
-                        </div>
-
-                        <div id="firstCard">
-                          <div class="px-9 pb-9 w-full box-border relative z-20 flex flex-col flex-shrink-0 flex-grow">
+                    <li class="h-[426px] w-[341px] sm:h-[457px] sm:w-[366px] md:h-[389px] md:w-[692px] xl:h-[551px] xl:w-[980px] relative list-none m-0 p-0 block rounded-xl overflow-hidden bg-[#131313] transition-colors duration-500 hover:bg-neutral-950">
+                      <a href={`/${post.slug}/`} class="w-full visited:no-underline hover:bg-transparent transition-colors duration-500 bg-black group h-full block relative group-hover:hover:[text-decoration:none] hover:[text-decoration:none]">
+                        <img transition:name={post.data.heroImage} src={post.data.heroImage} alt="heroImage" class="z-0 h-full object-cover object-top w-full [mask-image:linear-gradient(180deg,rgba(0,0,0,1),transparent_100%)] group-hover:scale-95 pointer-events-none rounded-xl overflow-hidden transition-all duration-500" />
+                        <div class="absolute bottom-0 z-20 w-full">
+                          <div class="px-9 pb-9 w-full box-border flex flex-col flex-shrink-0 flex-grow">
                             <div>
-                              <div class="sm:mb-3 text-white text-xs md:text-sm uppercase font-semibold">{post.data.type}</div>
-                              <div class="text-xl md:text-4xl font-bold">{post.data.title}</div>
+                              <div class="sm:mb-3 text-white text-xs md:text-sm uppercase font-semibold" transition:name={post.data.title+post.data.type}>{post.data.type}</div>
+                              <div class="text-xl md:text-4xl font-bold" transition:name={post.data.title}>{post.data.title}</div>
                             </div>
-                            <div class="sm:mt-3 text-white font-semibold">
+                            <div class="sm:mt-3 text-white font-semibold" transition:name={'pubDate'+(post.data.pubDate.getUTCFullYear()+post.data.pubDate.getUTCMonth()+post.data.pubDate.getUTCDate()).toString()} >
                               <FormattedDate date={post.data.pubDate} />
                             </div>
                           </div>
@@ -71,18 +47,17 @@ const posts = (await getCollection("blog")).filter((post) => post.data.isPublic 
                   // Apply other post styles
                   return (
                     <li class="relative flex list-none m-0 p-0 flex-shrink w-full md:w-2/3 lg:w-[calc(50%_-_var(--gap))]">
-                      <a href={`/${post.slug}/`} class="flex-col bg-neutral-900 group rounded-xl overflow-hidden z-0 relative flex h-full w-full visited:no-underline group-hover:hover:[text-decoration:none] hover:[text-decoration:none] border-2 border-white border-opacity-10">
-                        <div class="w-full h-64 min-h-[auto] basis-auto overflow-hidden flex-shrink">
-                          <div style={`background: url('${post.data.heroImage}') no-repeat top; background-size: cover; height: 100%;`} class="h-full w-full group-hover:scale-105 overflow-hidden transition-all duration-500 rounded-t-[10px]" />
+                      <a href={`/${post.slug}/`} class="flex-col bg-neutral-900 group rounded-xl overflow-hidden z-0 relative flex h-full w-full visited:no-underline group-hover:hover:[text-decoration:none] hover:[text-decoration:none] border-2 border-white/10">
+                        <div class="w-full border-b border-white/10 relative h-64 min-h-[auto] basis-auto overflow-hidden flex-shrink">
+                          <img transition:name={post.data.heroImage} src={post.data.heroImage} alt="heroImage" class="h-full object-cover object-center w-full rounded-t-xl group-hover:scale-95 pointer-events-none  transition-all duration-500" />
                         </div>
-
                         <div class="p-8 justify-between basis-auto flex flex-col flex-shrink-0 flex-grow">
                           <div>
-                            <div class="mb-2 text-white text-sm uppercase">{post.data.type}</div>
-                            <div class="text-2xl overflow-hidden font-bold">{post.data.title}</div>
+                            <div class="mb-2 text-white text-sm uppercase" transition:name={post.data.title+post.data.type}>{post.data.type}</div>
+                            <div class="text-2xl overflow-hidden font-bold" transition:name={post.data.title}>{post.data.title}</div>
                           </div>
-                          <div class="mt-3 text-sm text-white">
-                            <FormattedDate date={post.data.pubDate} />
+                          <div class="mt-3 text-sm text-white" transition:name={'pubDate'+(post.data.pubDate.getUTCFullYear()+post.data.pubDate.getUTCMonth()+post.data.pubDate.getUTCDate()).toString()}>
+                            <FormattedDate date={post.data.pubDate}/>
                           </div>
                         </div>
                       </a>

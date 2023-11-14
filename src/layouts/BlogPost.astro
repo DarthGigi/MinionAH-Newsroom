@@ -34,27 +34,29 @@ const { isPublic = true, title, description, pubDate, type, heroImage } = Astro.
         </style>
         <div class="mt-0 mb-5 mx-auto max-w-2xl">
           <div class="mx-auto">
-            <div class="text-xs font-bold text-neutral-300">
-              <span class="uppercase block">{type}</span>
-              <span class="mt-1 text-sm font-semibold block"><FormattedDate date={pubDate} /></span>
+            <div class="text-xs font-bold relative z-50 text-neutral-300">
+              <span class="uppercase block relative z-50" transition:name={title+type}>{type}</span>
+              <span class="mt-1 text-sm font-semibold block relative z-50" transition:name={'pubDate'+(pubDate.getUTCFullYear()+pubDate.getUTCMonth()+pubDate.getUTCDate()).toString()}>
+                <FormattedDate date={pubDate} />
+              </span>
             </div>
           </div>
         </div>
         <div class="mt-0 mb-0 mx-auto max-w-2xl">
           <div class="mx-auto">
-            <h1 class="text-5xl font-bold text-white">{title}</h1>
+            <h1 class="text-5xl font-bold text-white relative z-50" transition:name={title}>{title}</h1>
           </div>
         </div>
         {
           description && (
-            <div class="mt-5 mb-0 mx-auto max-w-2xl ">
+            <div transition:animate="slide" class="mt-5 mb-0 mx-auto max-w-2xl ">
               <div class="mx-auto">
-                <p class="font-medium text-white text-2xl leading-7" set:html={description} />
+                <p class="font-medium text-white text-2xl leading-7 relative z-50" set:html={description} />
               </div>
             </div>
           )
         }
-        {heroImage && <img src={heroImage} alt="heroImage" class="mx-auto" />}
+        {heroImage && <img src={heroImage} transition:name={heroImage} alt="heroImage" class="mx-auto" />}
         <div class="mx-auto prose-lg leading-[1.688rem]">
           <slot />
         </div>

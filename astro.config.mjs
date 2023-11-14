@@ -9,7 +9,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://newsroom.minions.mrgigi.me/",
+  site: "https://newsroom.minionah.com/",
   integrations: [mdx(), sitemap(), tailwind({
     config: {
       applyBaseStyles: false
