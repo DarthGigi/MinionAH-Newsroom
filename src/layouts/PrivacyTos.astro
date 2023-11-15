@@ -1,0 +1,69 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+
+const { frontmatter } = Astro.props;
+
+frontmatter.pubDate = new Date(frontmatter.pubDate);
+---
+
+<!-- if public is false, hide (hidden) -->
+<html lang="en" class="dark bg-[#131313]">
+  <head>
+    <BaseHead title={frontmatter.title} description={frontmatter.description} />
+  </head>
+
+  <body>
+    <div class:list={[frontmatter.isPublic ? "hidden" : "bg-red-500 text-white text-center py-2"]}>
+      <p class="text-sm">This post is not public.</p>
+    </div>
+    <Header />
+    <main class:list={[frontmatter.isPublic ? "" : "hidden", "relative overflow-hidden py-8"]}>
+      <article class="relative px-4 py-4 sm:px-4 lg:px-6 prose-a:text-white prose prose-neutral prose-lg !prose-invert mx-auto mt-6 prose-img:pointer-events-none max-w-4xl prose-img:w-full prose-img:rounded-lg prose-video:w-full prose-video:rounded-lg">
+        <style>
+          article *:not(img) {
+            max-width: 42rem;
+          }
+
+          article img {
+            max-width: 56rem;
+          }
+        </style>
+        <div class="mt-0 mb-5 mx-auto max-w-2xl">
+          <div class="mx-auto">
+            <div class="text-xs font-bold relative z-50 text-neutral-300">
+              <span class="uppercase block relative z-50" transition:name={frontmatter.title+frontmatter.type}>{frontmatter.type}</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-0 mb-0 mx-auto max-w-2xl">
+          <div class="mx-auto">
+            <h1 class="text-5xl font-bold text-white relative z-50" transition:name={frontmatter.title}>{frontmatter.title}</h1>
+          </div>
+        </div>
+        {
+          frontmatter.description && (
+            <div transition:animate="slide" class="mt-5 mb-0 mx-auto max-w-2xl ">
+              <div class="mx-auto">
+                <p class="font-medium text-white text-2xl leading-7 relative z-50" set:html={frontmatter.description} />
+              </div>
+            </div>
+          )
+        }
+        <div class="mx-auto prose-lg leading-[1.688rem]">
+          <slot />
+          <small class="text-muted">
+            <span>This document is effective as of <FormattedDate date={frontmatter.pubDate} /></span>
+            {frontmatter.lastUpdated && (
+              <br/>
+              <span>This document was last updated on <FormattedDate date={frontmatter.lastUpdated} /></span>
+            )}
+          </small>
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>
