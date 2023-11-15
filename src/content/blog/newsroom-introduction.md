@@ -4,7 +4,6 @@ description: "Introducing MinionAH Newsroom, our new site dedicated to keeping y
 isPublic: true
 type: "Release"
 pubDate: "November 13, 2023"
-pubDateStr: "November 13, 2023"
 heroImage: "/assets/images/newsroom.png"
 ---
 
