@@ -32,7 +32,7 @@ When using MinionAH, you agree not to:
 
 ## User Feedback and Support
 
-MinionAH welcomes user feedback and suggestions for improving MinionAH. You can provide feedback and report issues through the following ways:
+MinionAH welcomes user feedback and suggestions for improving MinionAH. You can provide feedback and report issues in one of the following ways:
 - [Discord server](https://discord.minionah.com)
 - [GitHub issues](https://github.com/DarthGigi/MinionAH/issues)
 - [Email](mailto:contact@minionah.com)
