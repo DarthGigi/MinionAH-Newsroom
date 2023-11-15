@@ -3,7 +3,7 @@ layout: ../layouts/PrivacyTos.astro
 title: "Terms of Service"
 description: "These Terms of Service govern your use of MinionAH."
 isPublic: true
-type: "Release"
+type: "ToS"
 pubDate: "November 14, 2023"
 ---
 

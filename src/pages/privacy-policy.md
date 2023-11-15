@@ -3,7 +3,7 @@ layout: ../layouts/PrivacyTos.astro
 title: "Privacy Policy"
 description: "This Privacy Policy describes how MinionAH collects, uses, stores, and discloses personal information in compliance with the General Data Protection Regulation (GDPR)."
 isPublic: true
-type: "Release"
+type: "Policy"
 pubDate: "November 14, 2023"
 ---
 
