@@ -41,6 +41,10 @@ MinionAH welcomes user feedback and suggestions for improving MinionAH. You can 
 
 The software is owned by Gigi and is operated by the MinionAH team. Your use of the software does not grant you ownership of any content, code, data, or materials you may access on or through the software.
 
+### Code
+
+[MinionAH is an open-source project](https://github.com/DarthGigi/MinionAH) licensed under the [GNU Affero General Public License v3.0 (AGPL-3.0)](https://github.com/DarthGigi/MinionAH/blob/main/LICENSE). This means that you are free to use, modify, and distribute the source code of MinionAH, as long as you respect the terms of the license and as stated above, you do not share or distribute malicious clones of MinionAH.
+
 ## Termination
 
 MinionAH reserves the right to terminate or suspend your access to MinionAH, at its sole discretion, without prior notice or liability, if you violate any provisions of these Terms of Service.
