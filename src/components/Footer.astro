@@ -1,7 +1,16 @@
 ---
 const today = new Date();
+
+const url = Astro.url.pathname
+
+console.log(url);
 ---
 
 <footer class="text-center p-4 text-neutral-600">
+  <div class="flex divide-x mb-2 justify-center divide-neutral-600">
+    <a href="https://minionah.com" target="_blank" class="px-4 transition-colors duration-300 text-neutral-600 hover:text-neutral-800">MinionAH</a>
+    <a href="/privacy-policy" class:list={["px-4 transition-colors underline-offset-2 duration-300 text-neutral-600 hover:text-neutral-800", url === '/privacy-policy' ? 'underline' : '']}>Privacy Policy</a>
+    <a href="/terms-of-service" class:list={["px-4 transition-colors underline-offset-2 duration-300 text-neutral-600 hover:text-neutral-800", url === '/terms-of-service' ? 'underline' : '']}>Terms of Service</a>
+  </div>
   &copy; {today.getFullYear()} MinionAH. All rights reserved.
 </footer>
