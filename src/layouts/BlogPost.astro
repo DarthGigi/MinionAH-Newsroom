@@ -10,8 +10,7 @@ type Props = CollectionEntry<"blog">["data"];
 const { isPublic = true, title, description, pubDate, type, heroImage } = Astro.props;
 ---
 
-<!-- if public is false, hide (hidden) -->
-<html lang="en" class="dark bg-[#131313]">
+<html lang="en" class="dark bg-[#131313] scroll-smooth">
   <head>
     <BaseHead title={title} description={description} image={heroImage} />
   </head>
@@ -22,7 +21,7 @@ const { isPublic = true, title, description, pubDate, type, heroImage } = Astro.
     </div>
     <Header />
     <main class:list={[isPublic ? "" : "hidden", "relative overflow-hidden py-8"]}>
-      <article class="relative px-4 py-4 sm:px-4 lg:px-6 prose-a:text-white prose prose-neutral prose-lg !prose-invert mx-auto mt-6 prose-img:pointer-events-none max-w-4xl prose-img:w-full prose-img:rounded-lg prose-video:w-full prose-video:rounded-lg">
+      <article class="relative px-4 py-4 sm:px-4 lg:px-6 prose-a:text-white prose prose-neutral prose-lg !prose-invert mx-auto mt-6 prose-img:pointer-events-none prose-headings:scroll-m-20 max-w-4xl prose-img:w-full prose-img:rounded-lg prose-video:w-full prose-video:rounded-lg">
         <style>
           article *:not(img) {
             max-width: 42rem;
