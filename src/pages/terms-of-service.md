@@ -5,6 +5,7 @@ description: "These Terms of Service govern your use of MinionAH."
 isPublic: true
 type: "ToS"
 pubDate: "November 14, 2023"
+lastUpdated: "November 18, 2023"
 ---
 
 By accessing or using MinionAH, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not use MinionAH.
@@ -14,9 +15,10 @@ By accessing or using MinionAH, you agree to be bound by these Terms of Service.
 ## Access and use of MinionAH
 
 MinionAH is a free software, which means that it is provided at no cost to you.  
-We will do our best to ensure that this stays the case, but we reserve the right to change this at any time if we can't afford to keep it free.
+We will do our best to ensure that this stays the case, but we reserve the right to change this at any time if we can't afford to keep it free.  
+Any such changes will be communicated to users.
 
-If we do change this, MinionAH will become a freemium software, which means that some features will be locked behind a paywall.
+If we do change this, MinionAH may become a freemium software, which means that some features will be locked behind a paywall.
 
 The software is designed to be used by accessing it through a web browser.
 
@@ -29,6 +31,8 @@ When using MinionAH, you agree not to:
 - Use MinionAH in any way that may cause damage to the software or impair the performance, availability, or accessibility of the software.
 - Use MinionAH in any way that is unlawful, illegal, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.
 - Share or distribute malicious clones of MinionAH.
+- Keep your login credentials secure and not share them with unauthorized users.
+- Ensure that you meet any age requirements and have parental consent if you are under a certain age.
 
 ## User Feedback and Support
 
@@ -37,13 +41,15 @@ MinionAH welcomes user feedback and suggestions for improving MinionAH. You can 
 - [GitHub issues](https://github.com/DarthGigi/MinionAH/issues)
 - [Email](mailto:contact@minionah.com)
 
+By providing feedback, you acknowledge that MinionAH may use your input to improve the software without explicit compensation.
+
 ## Intellectual Property Rights
 
 The software is owned by Gigi and is operated by the MinionAH team. Your use of the software does not grant you ownership of any content, code, data, or materials you may access on or through the software.
 
 ### Code
 
-[MinionAH is an open-source project](https://github.com/DarthGigi/MinionAH) licensed under the [GNU Affero General Public License v3.0 (AGPL-3.0)](https://github.com/DarthGigi/MinionAH/blob/main/LICENSE). This means that you are free to use, modify, and distribute the source code of MinionAH, as long as you respect the terms of the license and as stated above, you do not share or distribute malicious clones of MinionAH.
+[MinionAH is an open-source project](https://github.com/DarthGigi/MinionAH) licensed under the [GNU Affero General Public License v3.0 (AGPL-3.0)](https://github.com/DarthGigi/MinionAH/blob/main/LICENSE). This means that you are free to use, modify, and distribute the source code of MinionAH, as long as you respect the terms of the license and, as stated above, you do not share or distribute malicious clones of MinionAH.
 
 ## Termination
 
