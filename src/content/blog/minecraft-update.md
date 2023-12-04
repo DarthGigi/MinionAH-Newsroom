@@ -59,4 +59,4 @@ We also made some performance improvements to the website. The website should no
 
 ## Notes
 
-- The full list of changes can be found in the <a href="https://github.com/DarthGigi/MinionAH/blob/main/CHANGELOG.md#100---2023-12-04" target="_blank">CHANGELOG.md file</a>.
+- The full list of changes can be found in the <a href="https://github.com/DarthGigi/MinionAH/blob/main/CHANGELOG.md#110---2023-12-04" target="_blank">CHANGELOG.md file</a>.
