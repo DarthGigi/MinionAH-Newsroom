@@ -50,7 +50,7 @@ Speaking of 3D stuff, we also added 3D to the minion cards when you hover over t
 We also made some changes to the mobile version of the website. The navigation bar is now at the bottom of the screen, which makes it easier to reach with your thumb.
 
 <div class="bg-neutral-950 rounded-lg p-4">
-  <img src="/assets/images/minecraft-update/mobileView.png" class="max-h-[48rem] !w-auto mx-auto" alt="Mobile redesign"/>
+  <img src="/assets/images/minecraft-update/mobileView.png" class="max-h-[48rem] !w-auto mx-auto" alt="Mobile view"/>
 </div>
 
 ## Performance
