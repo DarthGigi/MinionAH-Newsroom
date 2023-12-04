@@ -46,7 +46,7 @@ const posts = (await getCollection("blog")).filter((post) => post.data.isPublic 
                 } else {
                   // Apply other post styles
                   return (
-                    <li class="relative flex list-none m-0 p-0 flex-shrink w-full md:w-2/3 lg:w-[calc(50%_-_var(--gap))]">
+                    <li class="relative last:even:mx-auto flex list-none m-0 p-0 flex-shrink w-full md:w-2/3 lg:w-[calc(50%_-_var(--gap))]">
                       <a href={`/${post.slug}/`} class="flex-col bg-neutral-900 group rounded-xl overflow-hidden z-0 relative flex h-full w-full visited:no-underline group-hover:hover:[text-decoration:none] hover:[text-decoration:none] border-2 border-white/10">
                         <div class="w-full border-b border-white/10 relative h-64 min-h-[auto] basis-auto overflow-hidden flex-shrink">
                           <img transition:name={post.data.heroImage} src={post.data.heroImage} alt="heroImage" class="h-full object-cover object-center w-full rounded-t-xl group-hover:scale-95 pointer-events-none  transition-all duration-500" />
