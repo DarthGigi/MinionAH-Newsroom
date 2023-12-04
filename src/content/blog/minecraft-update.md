@@ -3,7 +3,7 @@ title: "The Minecraft Update"
 description: "The Minecraft update is a major update for the website that changes the login system, introduces performance updates and some under-the-hood changes. Read more about it here."
 isPublic: true
 type: "Update"
-pubDate: "December 3, 2023"
+pubDate: "December 4, 2023"
 heroImage: "/assets/images/minecraft-update/banner.png"
 ---
 
