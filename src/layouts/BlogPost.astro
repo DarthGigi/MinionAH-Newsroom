@@ -14,8 +14,6 @@ const posts = (await getCollection("blog")).filter((post) => post.data.isPublic 
 const currentIndex = posts.findIndex((post) => post.slug === Astro.params.slug);
 const previousPost = posts[currentIndex + 1]?.slug;
 const nextPost = posts[currentIndex - 1]?.slug;
-
-
 ---
 
 <html lang="en" class="dark bg-[#131313] scroll-smooth">
