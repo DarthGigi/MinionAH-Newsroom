@@ -15,7 +15,7 @@ frontmatter.lastUpdated = frontmatter.lastUpdated ? new Date(frontmatter.lastUpd
     <BaseHead title={frontmatter.title} description={frontmatter.description} />
   </head>
 
-  <body>
+  <body data-astro-prefetch>
     <div class:list={[frontmatter.isPublic ? "hidden" : "bg-red-500 text-white text-center py-2"]}>
       <p class="text-sm">This post is not public.</p>
     </div>

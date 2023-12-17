@@ -17,5 +17,6 @@ export default defineConfig({
   }), robotsTxt(), react()],
   markdown: {
     remarkPlugins: [remarkToc]
-  }
+  },
+  prefetch: true
 });

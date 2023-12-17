@@ -15,7 +15,7 @@ const { isPublic = true, title, description, pubDate, type, heroImage } = Astro.
     <BaseHead title={title} description={description} image={heroImage} />
   </head>
 
-  <body>
+  <body data-astro-prefetch>
     <div class:list={[isPublic ? "hidden" : "bg-red-500 text-white text-center py-2"]}>
       <p class="text-sm">This post is not public.</p>
     </div>
