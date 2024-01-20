@@ -4,6 +4,7 @@ import tailwind from "@astrojs/tailwind";
 import robotsTxt from "astro-robots-txt";
 import { defineConfig } from "astro/config";
 import remarkToc from 'remark-toc';
+import rehypeExternalLinks from 'rehype-external-links';
 
 import react from "@astrojs/react";
 
@@ -16,7 +17,8 @@ export default defineConfig({
     }
   }), robotsTxt(), react()],
   markdown: {
-    remarkPlugins: [remarkToc]
+    remarkPlugins: [remarkToc],
+    rehypePlugins: [[rehypeExternalLinks, { target: '_blank', rel: ['noopener'] }]]
   },
   prefetch: true
 });
