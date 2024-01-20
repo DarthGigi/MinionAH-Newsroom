@@ -20,6 +20,9 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.2.1)(tailwindcss@3.4.1)
+  '@radix-ui/react-slot':
+    specifier: ^1.0.2
+    version: 1.0.2(@types/react@18.2.48)(react@18.2.0)
   '@radix-ui/react-tabs':
     specifier: ^1.0.4
     version: 1.0.4(@types/react-dom@18.2.18)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
@@ -44,6 +47,15 @@ dependencies:
   clsx:
     specifier: ^2.1.0
     version: 2.1.0
+  embla-carousel-autoplay:
+    specifier: 8.0.0-rc19
+    version: 8.0.0-rc19(embla-carousel@8.0.0-rc19)
+  embla-carousel-react:
+    specifier: 8.0.0-rc19
+    version: 8.0.0-rc19(react@18.2.0)
+  embla-carousel-wheel-gestures:
+    specifier: 8.0.0-rc05
+    version: 8.0.0-rc05(embla-carousel@8.0.0-rc19)
   lucide-react:
     specifier: ^0.312.0
     version: 0.312.0(react@18.2.0)
@@ -53,6 +65,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  rehype-external-links:
+    specifier: ^3.0.0
+    version: 3.0.0
   remark-toc:
     specifier: ^9.0.0
     version: 9.0.0
@@ -1889,6 +1904,46 @@ packages:
     resolution: {integrity: sha512-z/6oZ/Muqk4BaE7P69bXhUhpJbUM9ZJeka43ZwxsDshKtePns4mhBlh8bU5+yrnOnz3fhG82XLzGUXazOmsWnA==}
     dev: false
 
+  /embla-carousel-autoplay@8.0.0-rc19(embla-carousel@8.0.0-rc19):
+    resolution: {integrity: sha512-c1pxsGHuWbYD3outH5y4L+kzg15smyHKFIDmXLaXlI6rCiizzf6hWMW0ZgxJLV4y4nUwDrYhM6TtzxvvOcsfUw==}
+    peerDependencies:
+      embla-carousel: 8.0.0-rc19
+    dependencies:
+      embla-carousel: 8.0.0-rc19
+    dev: false
+
+  /embla-carousel-react@8.0.0-rc19(react@18.2.0):
+    resolution: {integrity: sha512-4BBj1HvlUqhWXFyDJOL/JbQ74jtekfdH646B1wQzM9QmWn6CEcbD/SmovKqc6B5jYTKaaGEGEEw7bpUJRajA8w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.1 || ^18.0.0
+    dependencies:
+      embla-carousel: 8.0.0-rc19
+      embla-carousel-reactive-utils: 8.0.0-rc19(embla-carousel@8.0.0-rc19)
+      react: 18.2.0
+    dev: false
+
+  /embla-carousel-reactive-utils@8.0.0-rc19(embla-carousel@8.0.0-rc19):
+    resolution: {integrity: sha512-ed9NppY0OxTtrSIwTCYNcMLlQfSNcNy8Zsw8uIG0te3qrhvQ2ePPsbcElK2SRAV8VMU6G7JQweQIb6amzYMDXA==}
+    peerDependencies:
+      embla-carousel: 8.0.0-rc19
+    dependencies:
+      embla-carousel: 8.0.0-rc19
+    dev: false
+
+  /embla-carousel-wheel-gestures@8.0.0-rc05(embla-carousel@8.0.0-rc19):
+    resolution: {integrity: sha512-KfPlGuOvMterlg01FDd+Iws5wefInkyks4ai3p4n4B5WAiyel+DHs4AFu09UmshcnHpIH5cLJQ6VJCbp/kyy1A==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      embla-carousel: ^8.0.0 || ~8.0.0-rc03
+    dependencies:
+      embla-carousel: 8.0.0-rc19
+      wheel-gestures: 2.2.5
+    dev: false
+
+  /embla-carousel@8.0.0-rc19:
+    resolution: {integrity: sha512-PAChVyYoVZo8subkBN8LjZ7+0vk4CmVvMnxH0Y2ux76VUEUBl1wk5xDo8+MUhH5MXU6ZrgkBpMe++bKob1Z+2g==}
+    dev: false
+
   /emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
     dev: false
@@ -2253,6 +2308,12 @@ packages:
       web-namespaces: 2.0.1
     dev: false
 
+  /hast-util-is-element@3.0.0:
+    resolution: {integrity: sha512-Val9mnv2IWpLbNPqc/pUem+a7Ipj2aHacCwgNfTiK0vJKl0LF+4Ba4+v1oPHFpf3bLYmreq0/l3Gud9S5OH42g==}
+    dependencies:
+      '@types/hast': 3.0.3
+    dev: false
+
   /hast-util-parse-selector@4.0.0:
     resolution: {integrity: sha512-wkQCkSYoOGCRKERFWcxMVMOcYE2K1AaNLU8DXS9arxnLOUEWbOXKXiJUNzEpqZ3JOKpnha3jkFrumEjVliDe7A==}
     dependencies:
@@ -2415,6 +2476,11 @@ packages:
 
   /inline-style-parser@0.2.2:
     resolution: {integrity: sha512-EcKzdTHVe8wFVOGEYXiW9WmJXPjqi1T+234YpJr98RiFYKHV3cdy1+3mkTE+KHTHxFFLH51SfaGOoUdW+v7ViQ==}
+    dev: false
+
+  /is-absolute-url@4.0.1:
+    resolution: {integrity: sha512-/51/TKE88Lmm7Gc4/8btclNXWS+g50wXhYJq8HWIBAGUBnoAdRu1aXeh364t/O7wXDAcTJDP8PNuNKWUDWie+A==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: false
 
   /is-alphabetical@2.0.1:
@@ -3848,6 +3914,17 @@ packages:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
     dev: false
 
+  /rehype-external-links@3.0.0:
+    resolution: {integrity: sha512-yp+e5N9V3C6bwBeAC4n796kc86M4gJCdlVhiMTxIrJG5UHDMh+PJANf9heqORJbt1nrCbDwIlAZKjANIaVBbvw==}
+    dependencies:
+      '@types/hast': 3.0.3
+      '@ungap/structured-clone': 1.2.0
+      hast-util-is-element: 3.0.0
+      is-absolute-url: 4.0.1
+      space-separated-tokens: 2.0.2
+      unist-util-visit: 5.0.0
+    dev: false
+
   /rehype-parse@9.0.0:
     resolution: {integrity: sha512-WG7nfvmWWkCR++KEkZevZb/uw41E8TsH4DsY9UxsTbIXCVGbAs4S+r8FrQ+OtH5EEQAs+5UxKC42VinkmpA1Yw==}
     dependencies:
@@ -4724,6 +4801,11 @@ packages:
 
   /web-namespaces@2.0.1:
     resolution: {integrity: sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==}
+    dev: false
+
+  /wheel-gestures@2.2.5:
+    resolution: {integrity: sha512-01BlXRjBVt5Gy0VH2rRqMeccHruTGq2Gd1fx0UqCPN8KDeDCmlTXsRGc/hXJk6W+wnO9CNJp2xfntMNRArBxKQ==}
+    engines: {node: '>=10'}
     dev: false
 
   /which-pm-runs@1.1.0:
