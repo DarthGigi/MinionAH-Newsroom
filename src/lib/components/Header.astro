@@ -1,5 +1,5 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
+import HeaderLink from "$lib/components/HeaderLink.astro";
 ---
 <nav id="nav" class="top-0 left-0 w-full h-14 z-[100] sticky saturate-[180%] backdrop-blur-[20px]">
   <div class="w-full px-6 sm:px-4 h-full flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
@@ -10,10 +10,10 @@ import HeaderLink from "./HeaderLink.astro";
     </a>
     <div class="hidden sm:flex items-center lg:order-2 text-xs [line-height:1.33337] gap-4">
       <div class="flex items-center gap-1 duration-700 ease-in-out">
-        <HeaderLink href="https://discord.minionah.com" target="_blank" class="text-white font-light opacity-80 hover:opacity-100"> Discord</a>
+        <HeaderLink href="https://discord.minionah.com" target="_blank" rel="noopener" class="text-white font-light opacity-80 hover:opacity-100">Discord</a>
       </div>
       <div class="hidden sm:flex items-center gap-1 duration-700 ease-in-out">
-        <HeaderLink href="https://minionah.com/" target="_blank" class="text-white font-light opacity-80 hover:opacity-100">MinionAH</a>
+        <HeaderLink href="https://minionah.com" target="_blank" rel="noopener" class="text-white font-light opacity-80 hover:opacity-100">MinionAH</a>
       </div>
     </div>
   </div>
