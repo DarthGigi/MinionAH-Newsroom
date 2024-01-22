@@ -5,9 +5,9 @@ isPublic: true
 type: "Update"
 pubDate: "December 17, 2023"
 heroImage: "/assets/images/minecraft-update/banner.png"
-classNames: "!object-contain"
+classes: "!object-contain"
 ---
-import ImageBeforeAfter from "@/components/ImageBeforeAfter.jsx";
+import BeforeAfter from "$lib/components/svelte/BeforeAfter.svelte";
 
 After we published [The Microsoft Update](/microsoft-update), we received a lot of feedback from the community. The major concern was the authentication system, and rightfully so. We should've never used Microsoft to authenticate your Minecraft account due to major security concerns.  
 
@@ -42,7 +42,7 @@ This password will be used to log in to MinionAH in the future, so you don't hav
 We have redesigned a lot of elements on the website to be easier to use in development, more accessible, and more consistent with the rest of the website.
 
 For example, we have redesigned the minion creation form on the profile page:
-<ImageBeforeAfter before="/assets/images/chat-update/profileAfter.png" after="/assets/images/minecraft-update/profileAfter.png" client:visible />
+<BeforeAfter before="/assets/images/chat-update/profileAfter.png" after="/assets/images/minecraft-update/profileAfter.png" client:visible />
 <span class="block mx-auto not-prose text-xs text-center">Click on the before/after buttons to see the changes.</span>  
 The tier selector is now disabled by default until you select a minion. Once you do, the tier selector will be updated to have a maximum amount of tiers, 11 or 12, depending on the minion.
 

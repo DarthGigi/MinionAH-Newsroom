@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
-import BaseHead from "../components/BaseHead.astro";
-import Footer from "../components/Footer.astro";
-import FormattedDate from "../components/FormattedDate.astro";
-import Header from "../components/Header.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import BaseHead from "$lib/components/BaseHead.astro";
+import Footer from "$lib/components/Footer.astro";
+import FormattedDate from "$lib/components/FormattedDate.astro";
+import Header from "$lib/components/Header.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "$/consts";
 
 const posts = (await getCollection("blog")).filter((post) => post.data.isPublic !== false).sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 ---
@@ -49,7 +49,7 @@ const posts = (await getCollection("blog")).filter((post) => post.data.isPublic 
                     <li class="relative last:even:mx-auto flex list-none m-0 p-0 flex-shrink w-full md:w-2/3 lg:w-[calc(50%_-_var(--gap))]">
                       <a href={`/${post.slug}/`} class="flex-col bg-neutral-900 group rounded-xl overflow-hidden z-0 relative flex h-full w-full visited:no-underline group-hover:hover:[text-decoration:none] hover:[text-decoration:none] border-2 border-white/10">
                         <div class="w-full border-b border-white/10 relative h-64 min-h-[auto] basis-auto overflow-hidden flex-shrink">
-                          <img transition:name={post.data.heroImage} src={post.data.heroImage} alt="heroImage" class={`h-full object-cover object-center w-full rounded-t-xl group-hover:scale-95 pointer-events-none  transition-all duration-500 ${post.data.classNames}`} />
+                          <img transition:name={post.data.heroImage} src={post.data.heroImage} alt="heroImage" class={`h-full object-cover object-center w-full rounded-t-[0.625rem] group-hover:scale-95 pointer-events-none  transition-all duration-500 ${post.data.classes}`} />
                         </div>
                         <div class="p-8 justify-between basis-auto flex flex-col flex-shrink-0 flex-grow">
                           <div>

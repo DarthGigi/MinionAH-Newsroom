@@ -6,8 +6,7 @@ type: "Update"
 pubDate: "November 14, 2023"
 heroImage: "/assets/images/chat-update/banner.png"
 ---
-import ImageBeforeAfter from "@/components/ImageBeforeAfter.jsx";
-import VideoBeforeAfter from "@/components/VideoBeforeAfter.jsx";
+import BeforeAfter from "$lib/components/svelte/BeforeAfter.svelte";
 
 
 I've been working on this update for a while now, and I'm happy to announce that it's finally here! This update adds a chat system, new features, and updates to the website.
@@ -60,7 +59,7 @@ I've redesigned some components of the cards, one being the pricing. Now when yo
 
 The minion and user hover effects have also been redesigned. It's now a bit more useful where it shows some more information about the minion and user with a beautiful tooltip.
 
-<VideoBeforeAfter before="/assets/videos/chat-update/cardOld.mp4" after="/assets/videos/chat-update/cardNew.mp4" client:visible />
+<BeforeAfter before="/assets/videos/chat-update/cardOld.mp4" after="/assets/videos/chat-update/cardNew.mp4" client:visible />
 
 The Mithril icon now also displays a tooltip for those who don't know what the icon stands for.
 
@@ -74,19 +73,19 @@ The components and the layout of them on the profile page have also been redesig
 
 For example, the minion selector now has a search bar to make it easier to find the minion you're looking for.
 
-<VideoBeforeAfter before="/assets/videos/chat-update/minionSelectOld.mp4" after="/assets/videos/chat-update/minionSelectNew.mp4" client:visible />
+<BeforeAfter before="/assets/videos/chat-update/minionSelectOld.mp4" after="/assets/videos/chat-update/minionSelectNew.mp4" client:visible />
 
 The minion auction card has also given a face-lift. It now has a more modern and consistent look.
 
-<ImageBeforeAfter before="/assets/images/chat-update/profileBefore.png" after="/assets/images/chat-update/profileAfter.png" client:visible />
+<BeforeAfter before="/assets/images/chat-update/profileBefore.png" after="/assets/images/chat-update/profileAfter.png" client:visible />
 
 The dialogs have also been redesigned to be more consistent with the rest of the website and provide more information.
 
-<ImageBeforeAfter before="/assets/images/chat-update/profileDeleteFormBefore.png" after="/assets/images/chat-update/profileDeleteFormAfter.png" client:visible />
+<BeforeAfter before="/assets/images/chat-update/profileDeleteFormBefore.png" after="/assets/images/chat-update/profileDeleteFormAfter.png" client:visible />
 
 ---
 
-<ImageBeforeAfter before="/assets/images/chat-update/profileDeleteFormSuccessBefore.png" after="/assets/images/chat-update/profileDeleteFormSuccessAfter.png" client:visible classList="mt-3" />
+<BeforeAfter before="/assets/images/chat-update/profileDeleteFormSuccessBefore.png" after="/assets/images/chat-update/profileDeleteFormSuccessAfter.png" client:visible classList="mt-3" />
 
 
 ## Other Changes
@@ -105,7 +104,7 @@ The share button has a new animation.
 
 The load more button has also been redesigned.
 
-<VideoBeforeAfter before="/assets/videos/chat-update/loadMoreButtonBefore.mp4" after="/assets/videos/chat-update/loadMoreButtonAfter.mp4" client:visible />
+<BeforeAfter before="/assets/videos/chat-update/loadMoreButtonBefore.mp4" after="/assets/videos/chat-update/loadMoreButtonAfter.mp4" client:visible />
 
 ## Notes
 

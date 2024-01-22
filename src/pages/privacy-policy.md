@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/PrivacyTos.astro
+layout: $/layouts/PrivacyTos.astro
 title: "Privacy Policy"
 description: "This Privacy Policy describes how MinionAH collects, uses, stores, and discloses personal information in compliance with the General Data Protection Regulation (GDPR)."
 isPublic: true

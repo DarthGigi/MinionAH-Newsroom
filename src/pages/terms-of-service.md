@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/PrivacyTos.astro
+layout: $/layouts/PrivacyTos.astro
 title: "Terms of Service"
 description: "These Terms of Service govern your use of MinionAH."
 isPublic: true

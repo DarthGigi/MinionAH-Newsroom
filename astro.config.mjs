@@ -6,7 +6,7 @@ import { defineConfig } from "astro/config";
 import remarkToc from 'remark-toc';
 import rehypeExternalLinks from 'rehype-external-links';
 
-import react from "@astrojs/react";
+import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,10 +15,13 @@ export default defineConfig({
     config: {
       applyBaseStyles: false
     }
-  }), robotsTxt(), react()],
+  }), robotsTxt(), svelte()],
   markdown: {
     remarkPlugins: [remarkToc],
-    rehypePlugins: [[rehypeExternalLinks, { target: '_blank', rel: ['noopener'] }]]
+    rehypePlugins: [[rehypeExternalLinks, {
+      target: '_blank',
+      rel: ['noopener']
+    }]]
   },
   prefetch: true
 });
