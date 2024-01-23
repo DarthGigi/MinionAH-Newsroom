@@ -26,7 +26,7 @@ export async function get() {
         <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
         <ttl>60</ttl>
         <image>
-            <url>https://newsroom.minionah.com/images/newsroom.png</url>
+            <url>https://newsroom.minionah.com/images/ogBanner.png</url>
             <title>${SITE_TITLE}</title>
             <link>${SITE_URL}</link>
         </image>
