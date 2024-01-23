@@ -4,7 +4,7 @@ description: "Introducing MinionAH Newsroom, our new site dedicated to keeping y
 isPublic: true
 type: "Release"
 pubDate: "November 13, 2023"
-heroImage: "/assets/images/ogBanner.png"
+heroImage: "/assets/images/newsroom.png"
 ---
 
 MinionAH Newsroom will be the best place to get information for all things MinionAH. It will keep you updated on all sorts of information related to our products.
