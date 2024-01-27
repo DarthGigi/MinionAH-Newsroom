@@ -2,7 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "$/app.css";
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
   title: string;
@@ -41,8 +41,10 @@ const { title, description, image = "/assets/images/ogBanner.png?v=2" } = Astro.
 <meta property="og:image:alt" content={title} />
 {
   image === "/assets/images/ogBanner.png?v=2" && (
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <>
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+    </>
   )
 }
 <meta property="og:image:type" content="image/png" />

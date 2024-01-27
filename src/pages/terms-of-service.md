@@ -23,11 +23,13 @@ If we do change this, MinionAH may become a freemium software, which means that 
 The software is designed to be used by accessing it through a web browser.
 
 The software is supported by any device that can run a modern web browser. We recommend using the latest version of your web browser or at least:
+
 - Google Chrome 110
 - Mozilla Firefox 110
 - Safari 16
 
 When using MinionAH, you agree not to:
+
 - Use MinionAH in any way that may cause damage to the software or impair the performance, availability, or accessibility of the software.
 - Use MinionAH in any way that is unlawful, illegal, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.
 - Share or distribute malicious clones of MinionAH.
@@ -37,6 +39,7 @@ When using MinionAH, you agree not to:
 ## User Feedback and Support
 
 MinionAH welcomes user feedback and suggestions for improving MinionAH. You can provide feedback and report issues in one of the following ways:
+
 - [Discord server](https://discord.minionah.com)
 - [GitHub issues](https://github.com/DarthGigi/MinionAH/issues)
 - [Email](mailto:contact@minionah.com)

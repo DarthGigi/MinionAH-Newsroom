@@ -16,18 +16,18 @@ const previousPost = posts[currentIndex + 1]?.slug;
 const nextPost = posts[currentIndex - 1]?.slug;
 ---
 
-<html lang="en" class="dark bg-[#171717] scroll-smooth">
+<html lang="en" class="dark scroll-smooth bg-[#171717]">
   <head>
     <BaseHead title={title} description={description} image={heroImage} />
   </head>
 
   <body data-astro-prefetch>
-    <div class:list={[isPublic ? "hidden" : "bg-red-500 text-white text-center py-2"]}>
+    <div class:list={[isPublic ? "hidden" : "bg-red-500 py-2 text-center text-white"]}>
       <p class="text-sm">This post is not public.</p>
     </div>
     <Header />
     <main class:list={[isPublic ? "" : "hidden", "relative overflow-hidden py-8"]}>
-      <article class="relative px-4 py-4 sm:px-4 lg:px-6 prose-a:text-white prose prose-neutral prose-lg !prose-invert mx-auto mt-6 prose-img:pointer-events-none prose-headings:scroll-m-20 max-w-4xl prose-img:w-full prose-img:rounded-lg prose-video:w-full prose-video:rounded-lg">
+      <article class="prose prose-lg prose-neutral !prose-invert relative mx-auto mt-6 max-w-4xl px-4 py-4 prose-headings:scroll-m-20 prose-a:text-white prose-img:pointer-events-none prose-img:w-full prose-img:rounded-lg prose-video:w-full prose-video:rounded-lg sm:px-4 lg:px-6">
         <style>
           article *:not(img) {
             max-width: 42rem;
@@ -37,32 +37,32 @@ const nextPost = posts[currentIndex - 1]?.slug;
             max-width: 56rem;
           }
         </style>
-        <div class="mt-0 mb-5 mx-auto max-w-2xl">
+        <div class="mx-auto mb-5 mt-0 max-w-2xl">
           <div class="mx-auto">
-            <div class="text-xs font-bold relative z-50 text-neutral-300">
-              <span class="uppercase block relative z-50" transition:name={title+type}>{type}</span>
-              <span class="mt-1 text-sm font-semibold block relative z-50" transition:name={'pubDate'+(pubDate.getUTCFullYear()+pubDate.getUTCMonth()+pubDate.getUTCDate()).toString()}>
+            <div class="relative z-50 text-xs font-bold text-neutral-300">
+              <span class="relative z-50 block uppercase" transition:name={title + type}>{type}</span>
+              <span class="relative z-50 mt-1 block text-sm font-semibold" transition:name={"pubDate" + (pubDate.getUTCFullYear() + pubDate.getUTCMonth() + pubDate.getUTCDate()).toString()}>
                 <FormattedDate date={pubDate} />
               </span>
             </div>
           </div>
         </div>
-        <div class="mt-0 mb-0 mx-auto max-w-2xl">
+        <div class="mx-auto mb-0 mt-0 max-w-2xl">
           <div class="mx-auto">
-            <h1 class="text-5xl font-bold text-white relative z-50" transition:name={title}>{title}</h1>
+            <h1 class="relative z-50 text-5xl font-bold text-white" transition:name={title}>{title}</h1>
           </div>
         </div>
         {
           description && (
-            <div transition:animate="slide" class="mt-5 mb-0 mx-auto max-w-2xl ">
+            <div transition:animate="slide" class="mx-auto mb-0 mt-5 max-w-2xl ">
               <div class="mx-auto">
-                <p class="font-medium text-white text-2xl leading-7 relative z-50" set:html={description} />
+                <p class="relative z-50 text-2xl font-medium leading-7 text-white" set:html={description} />
               </div>
             </div>
           )
         }
         {heroImage && <img src={heroImage} transition:name={heroImage} alt="heroImage" class="mx-auto" />}
-        <div class="mx-auto prose-lg leading-[1.688rem]">
+        <div class="prose-lg mx-auto leading-[1.688rem]">
           <slot />
         </div>
       </article>
@@ -70,40 +70,43 @@ const nextPost = posts[currentIndex - 1]?.slug;
     <!-- Previous/Next post -->
     <div class="navigation">
       <div class={`flex max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ${previousPost && nextPost ? "justify-between" : previousPost ? "justify-start" : nextPost ? "justify-end" : ""}`}>
-
-          {previousPost && (
-            <a href={`/${previousPost}`} class="bg-neutral-800 group rounded-md flex items-center justify-end text-sm font-medium text-neutral-300  transition-all duration-300">
+        {
+          previousPost && (
+            <a href={`/${previousPost}`} class="group flex items-center justify-end rounded-md bg-neutral-800 text-sm font-medium text-neutral-300  transition-all duration-300">
               <div class="px-4 py-3">
-                <div class="flex justify-start items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-circle w-4 h-4 group-hover:-translate-x-1 transition-all duration-300">
-                    <circle cx="12" cy="12" r="10"/>
-                    <path d="M16 12H8"/>
-                    <path d="m12 8-4 4 4 4"/>
+                <div class="flex items-center justify-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-circle h-4 w-4 transition-all duration-300 group-hover:-translate-x-1">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M16 12H8" />
+                    <path d="m12 8-4 4 4 4" />
                   </svg>
-                  <span class="group-hover:text-neutral-400 ml-1">Previous</span>
+                  <span class="ml-1 group-hover:text-neutral-400">Previous</span>
                 </div>
                 <p class="text-white">{posts[currentIndex + 1].data.title}</p>
               </div>
             </a>
-          )}
-          {nextPost && (
-            <a href={`/${nextPost}`} class="bg-neutral-800 group rounded-md flex items-center justify-end text-sm font-medium text-neutral-300  transition-all duration-300">
+          )
+        }
+        {
+          nextPost && (
+            <a href={`/${nextPost}`} class="group flex items-center justify-end rounded-md bg-neutral-800 text-sm font-medium text-neutral-300  transition-all duration-300">
               <div class="px-4 py-3">
-                <div class="flex justify-end items-center">
-                  <span class="group-hover:text-neutral-400 mr-1">Next</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-circle w-4 h-4 group-hover:translate-x-1 transition-all duration-300">
-                    <circle cx="12" cy="12" r="10"/>
-                    <path d="M8 12h8"/>
-                    <path d="m12 16 4-4-4-4"/>
+                <div class="flex items-center justify-end">
+                  <span class="mr-1 group-hover:text-neutral-400">Next</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-circle h-4 w-4 transition-all duration-300 group-hover:translate-x-1">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M8 12h8" />
+                    <path d="m12 16 4-4-4-4" />
                   </svg>
                 </div>
                 <p class="text-white">{posts[currentIndex - 1].data.title}</p>
               </div>
             </a>
-          )}
+          )
+        }
       </div>
     </div>
-    
+
     <Footer />
   </body>
 </html>

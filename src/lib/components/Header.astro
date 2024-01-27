@@ -1,20 +1,20 @@
 ---
 import HeaderLink from "$lib/components/HeaderLink.astro";
 ---
-<nav id="nav" class="top-0 left-0 w-full h-14 z-[100] sticky saturate-[180%] backdrop-blur-[20px]">
-  <div class="w-full px-6 sm:px-4 h-full flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-    <a id="logo" href="/" class="text-white text-xl font-semibold duration-500 p-0 hover:opacity-50 transition-opacity m-0 no-underline hover:no-underline text-[1em] flex items-center ease-in-out">
-      <img class="w-6 h-6 mr-2" src="/assets/favicons/favicon.png" alt="logo">
-      </img>
-      Newsroom
+
+<nav id="nav" class="sticky left-0 top-0 z-[100] h-14 w-full saturate-[180%] backdrop-blur-[20px]">
+  <div class="mx-auto flex h-full w-full max-w-screen-xl flex-wrap items-center justify-between px-6 sm:px-4">
+    <a id="logo" href="/" class="m-0 flex items-center p-0 text-[1em] text-xl font-semibold text-white no-underline transition-opacity duration-500 ease-in-out hover:no-underline hover:opacity-50">
+      <img class="mr-2 h-6 w-6" src="/assets/favicons/favicon.png" alt="logo" />
     </a>
-    <div class="hidden sm:flex items-center lg:order-2 text-xs [line-height:1.33337] gap-4">
-      <div class="flex items-center gap-1 duration-700 ease-in-out">
-        <HeaderLink href="https://discord.minionah.com" target="_blank" rel="noopener" class="text-white font-light opacity-80 hover:opacity-100">Discord</a>
-      </div>
-      <div class="hidden sm:flex items-center gap-1 duration-700 ease-in-out">
-        <HeaderLink href="https://minionah.com" target="_blank" rel="noopener" class="text-white font-light opacity-80 hover:opacity-100">MinionAH</a>
-      </div>
+    Newsroom
+  </div>
+  <div class="hidden items-center gap-4 text-xs [line-height:1.33337] sm:flex lg:order-2">
+    <div class="flex items-center gap-1 duration-700 ease-in-out">
+      <HeaderLink href="https://discord.minionah.com" target="_blank" rel="noopener" class="font-light text-white opacity-80 hover:opacity-100">Discord</HeaderLink>
+    </div>
+    <div class="hidden items-center gap-1 duration-700 ease-in-out sm:flex">
+      <HeaderLink href="https://minionah.com" target="_blank" rel="noopener" class="font-light text-white opacity-80 hover:opacity-100">MinionAH</HeaderLink>
     </div>
   </div>
 </nav>
@@ -24,9 +24,16 @@ import HeaderLink from "$lib/components/HeaderLink.astro";
     background-color: rgba(19, 19, 19, 0.7);
     -webkit-transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
     transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-    -webkit-transition-property: background-color, -webkit-backdrop-filter;
-    transition-property: background-color, -webkit-backdrop-filter;
+    -webkit-transition-property:
+      background-color,
+      -webkit-backdrop-filter;
+    transition-property:
+      background-color,
+      -webkit-backdrop-filter;
     transition-property: background-color, backdrop-filter;
-    transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
+    transition-property:
+      background-color,
+      backdrop-filter,
+      -webkit-backdrop-filter;
   }
 </style>

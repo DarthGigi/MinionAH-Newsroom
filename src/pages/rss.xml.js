@@ -14,7 +14,7 @@ export async function get() {
       link: `/blog/${post.slug}/`,
       customData: `
       <image>${post.data.heroImage}</image>
-      <category>${post.data.type}</category>`,
+      <category>${post.data.type}</category>`
     }));
 
   const categories = ["MinionAH", "Blog", "News", "Updates", "Announcements", "Newsroom"];
@@ -38,6 +38,6 @@ export async function get() {
     site: SITE_URL,
     feed_url: `${SITE_URL}/rss.xml`,
     customData,
-    items: feedItems,
+    items: feedItems
   });
 }
