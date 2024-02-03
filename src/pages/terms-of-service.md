@@ -5,7 +5,7 @@ description: "These Terms of Service govern your use of MinionAH."
 isPublic: true
 type: "ToS"
 pubDate: "November 14, 2023"
-lastUpdated: "November 18, 2023"
+lastUpdated: "February 3, 2024"
 ---
 
 By accessing or using MinionAH, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not use MinionAH.
@@ -24,16 +24,16 @@ The software is designed to be used by accessing it through a web browser.
 
 The software is supported by any device that can run a modern web browser. We recommend using the latest version of your web browser or at least:
 
-- Google Chrome 110
+- Google Chrome 110 (or any Chromium-based browser with the Chromium version 110)
 - Mozilla Firefox 110
 - Safari 16
 
-When using MinionAH, you agree not to:
+When using MinionAH, you agree to:
 
-- Use MinionAH in any way that may cause damage to the software or impair the performance, availability, or accessibility of the software.
-- Use MinionAH in any way that is unlawful, illegal, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.
-- Share or distribute malicious clones of MinionAH.
-- Keep your login credentials secure and not share them with unauthorized users.
+- Not use MinionAH in any way that may cause damage to the software or impair the performance, availability, or accessibility of the software.
+- Not use MinionAH in any way that is unlawful, illegal, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.
+- Not share or distribute malicious clones of MinionAH.
+- Keep your login credentials secure and do not share them with unauthorized users.
 - Ensure that you meet any age requirements and have parental consent if you are under a certain age.
 
 ## User Feedback and Support
