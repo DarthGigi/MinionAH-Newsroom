@@ -5,7 +5,7 @@ description: "This Privacy Policy describes how MinionAH collects, uses, stores,
 isPublic: true
 type: "Policy"
 pubDate: "November 14, 2023"
-lastUpdated: "November 18, 2023"
+lastUpdated: "February 3, 2024"
 ---
 
 Please read this policy carefully to understand how we use and handle your personal information.
@@ -22,20 +22,18 @@ MinionAH is the entity in charge of processing and managing your data.
 
 We may use and process the following types of personal information:
 
-- Discord Information:
+- Minecraft Information:
   - ID
   - Username
-  - Avatar (if any)
-  - Banner (if any)
-  - Accent Color (if any)
-  - Locale
-  - Additional Information:
-    - Date and time of your login
+  - Skin
+  - Cape (if applicable)
+- Additional Information:
+  - Date and time of your login
 - IP address
 - User-agent
 - Cookies
 
-In addition to the above, we use Vercel Analytics.
+In addition to the above, we use Vercel Analytics and Vercel Speed Insights, these are privacy-friendly and do not collect any personal information, they are fully anonymous.
 
 We aim to use the minimum amount of data possible to provide our services. We believe that user privacy should be kept at the core of our products. **We simply do not want or care about your data.**
 
@@ -47,9 +45,9 @@ We use personal information through the usage of our website.
 
 We process your personal information for the following purposes:
 
-- Discord:
+- Minecraft:
 
-  If you choose to log in with Discord, we will use the information [mentioned above](#types-of-personal-information-collected) to authenticate you and provide you with our services. Your Discord ID is used to identify you.
+  If you choose to sign up with Minecraft (via [mc-auth](https://mc-auth.com)), we will use the information [mentioned above](#types-of-personal-information-collected) to authenticate you and provide you with our services. Your Minecraft ID is used to identify you.
 
 - IP address:
 
@@ -72,6 +70,12 @@ We process your personal information for the following purposes:
 - Vercel Analytics:
 
   We use Vercel Analytics to collect anonymous usage data, which is privacy-friendly. You can [read Vercel Analytics' Privacy Policy here](https://vercel.com/docs/analytics/privacy-policy).
+
+  This data is not stored in our database; instead, it is stored in Vercel's database. We do not have access to this raw data.
+
+- Vercel Speed Insights:
+
+  We use Vercel Speed Insights to collect anonymous performance data, which is privacy-friendly. You can [read Vercel Speed Insights' Privacy Policy here](https://vercel.com/docs/analytics/privacy-policy).
 
   This data is not stored in our database; instead, it is stored in Vercel's database. We do not have access to this raw data.
 
