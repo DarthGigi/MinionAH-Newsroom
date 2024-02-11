@@ -1,7 +1,7 @@
 <script lang="ts">
   import { cn } from "$lib/utils";
   import type { HTMLAttributes } from "svelte/elements";
-  import { getEmblaContext } from "./context.ts";
+  import { getEmblaContext } from "./context.js";
 
   type $$Props = HTMLAttributes<HTMLDivElement>;
   let className: string | undefined | null = undefined;
