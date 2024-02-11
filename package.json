@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "update:shadcn": "pnpm dlx shadcn-svelte update -a && prettier --write ./src/lib/components/ui"
   },
   "dependencies": {
     "@astrojs/mdx": "^2.1.1",
