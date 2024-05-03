@@ -54,7 +54,7 @@ frontmatter.lastUpdated = frontmatter.lastUpdated ? new Date(frontmatter.lastUpd
         }
         <div class="prose-lg mx-auto leading-[1.688rem]">
           <slot />
-          <small class="text-muted">
+          <small class="text-accent">
             <span>This document is effective as of <FormattedDate date={frontmatter.pubDate} /></span>
             {
               frontmatter.lastUpdated && (
