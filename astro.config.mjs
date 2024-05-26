@@ -5,8 +5,8 @@ import robotsTxt from "astro-robots-txt";
 import { defineConfig } from "astro/config";
 import remarkToc from "remark-toc";
 import rehypeExternalLinks from "rehype-external-links";
-
 import svelte from "@astrojs/svelte";
+import playformCompress from "@playform/compress";
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,7 +20,8 @@ export default defineConfig({
       }
     }),
     robotsTxt(),
-    svelte()
+    svelte(),
+    playformCompress()
   ],
   markdown: {
     remarkPlugins: [remarkToc],
