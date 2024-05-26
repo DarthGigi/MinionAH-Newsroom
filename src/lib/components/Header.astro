@@ -1,39 +1,13 @@
 ---
-import HeaderLink from "$lib/components/HeaderLink.astro";
+import NavbarDropdown from "$lib/components/svelte/NavbarDropdown.svelte";
 ---
 
-<nav id="nav" class="sticky left-0 top-0 z-[100] h-14 w-full saturate-[180%] backdrop-blur-[20px]">
-  <div class="mx-auto flex h-full w-full max-w-screen-xl flex-wrap items-center justify-between px-6 sm:px-4">
-    <a id="logo" href="/" class="m-0 flex items-center p-0 text-[1em] text-xl font-semibold text-white no-underline transition-opacity duration-500 ease-in-out hover:no-underline hover:opacity-50">
-      <img class="mr-2 h-6 w-6" src="/assets/favicons/favicon.png" alt="logo" />
-      Newsroom
-    </a>
-    <div class="hidden items-center gap-4 text-xs [line-height:1.33337] sm:flex lg:order-2">
-      <div class="flex items-center gap-1 duration-700 ease-in-out">
-        <HeaderLink href="https://discord.minionah.com" target="_blank" rel="noopener" class="font-light text-white opacity-80 hover:opacity-100">Discord</HeaderLink>
-      </div>
-      <div class="hidden items-center gap-1 duration-700 ease-in-out sm:flex">
-        <HeaderLink href="https://minionah.com" target="_blank" rel="noopener" class="font-light text-white opacity-80 hover:opacity-100">MinionAH</HeaderLink>
+<nav class="select-none bg-secondary text-foreground max-md:fixed max-md:bottom-0 max-md:z-50 max-md:w-full">
+  <div class="mx-auto max-w-7xl px-4 pb-[env(safe-area-inset-bottom)] pl-[max(0.5rem,env(safe-area-inset-left))] pr-[max(2rem,env(safe-area-inset-right))] pt-[env(safe-area-inset-top)] sm:px-6 lg:px-8">
+    <div class="flex h-16 flex-row justify-between">
+      <div class="flex flex-shrink-0 items-center">
+        <NavbarDropdown client:idle />
       </div>
     </div>
   </div>
 </nav>
-
-<style>
-  #nav {
-    background-color: rgba(19, 19, 19, 0.7);
-    -webkit-transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-    transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-    -webkit-transition-property:
-      background-color,
-      -webkit-backdrop-filter;
-    transition-property:
-      background-color,
-      -webkit-backdrop-filter;
-    transition-property: background-color, backdrop-filter;
-    transition-property:
-      background-color,
-      backdrop-filter,
-      -webkit-backdrop-filter;
-  }
-</style>

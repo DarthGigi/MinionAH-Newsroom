@@ -17,13 +17,13 @@ const previousPost = posts[currentIndex + 1]?.slug;
 const nextPost = posts[currentIndex - 1]?.slug;
 ---
 
-<html lang="en" class="dark scroll-smooth bg-[#171717]">
+<html lang="en">
   <head>
     <BaseHead title={title} description={description} image={heroImage} />
   </head>
 
   <body data-astro-prefetch>
-    <div class:list={[isPublic ? "hidden" : "bg-red-500 py-2 text-center text-white"]}>
+    <div class:list={[isPublic ? "hidden" : "bg-destructive py-2 text-center text-destructive-foreground"]}>
       <p class="text-sm">This post is not public.</p>
     </div>
     <Header />

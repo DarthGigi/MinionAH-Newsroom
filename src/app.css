@@ -39,10 +39,10 @@
 
   body {
     /* Ensure that the body fills the entire viewport. */
-    min-height: 100dvh;
+    @apply min-h-dvh w-full;
   }
   html {
-    @apply scroll-smooth;
+    @apply dark scroll-smooth bg-muted pb-[env(safe-area-inset-bottom)] pt-[env(safe-area-inset-top)] text-foreground;
   }
 
   * {
@@ -50,7 +50,7 @@
   }
 
   *::-webkit-scrollbar {
-    display: none;
+    @apply hidden;
   }
 
   video {

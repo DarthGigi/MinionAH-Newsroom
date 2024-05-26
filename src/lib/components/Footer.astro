@@ -2,11 +2,11 @@
 const url = Astro.url.pathname;
 ---
 
-<footer class="p-4 text-center text-neutral-600">
-  <div class="mb-2 flex justify-center divide-x divide-neutral-600">
-    <a href="https://minionah.com" target="_blank" rel="noopener" class="px-4 text-neutral-600 transition-colors duration-300 hover:text-neutral-800">MinionAH</a>
-    <a href="/privacy-policy" class:list={["px-4 text-neutral-600 underline-offset-2 transition-colors duration-300 hover:text-neutral-800", url === "/privacy-policy" ? "underline" : ""]}>Privacy Policy</a>
-    <a href="/terms-of-service" class:list={["px-4 text-neutral-600 underline-offset-2 transition-colors duration-300 hover:text-neutral-800", url === "/terms-of-service" ? "underline" : ""]}>Terms of Service</a>
+<footer class="p-4 text-center text-accent">
+  <div class="mb-2 flex justify-center divide-x divide-accent">
+    <a href="https://minionah.com" target="_blank" rel="noopener" class="px-4 underline-offset-2 transition-colors duration-300 hover:text-muted-foreground">MinionAH</a>
+    <a href="/privacy-policy" class:list={["px-4 underline-offset-2 transition-colors duration-300 hover:text-muted-foreground", url === "/privacy-policy" ? "underline" : ""]}>Privacy Policy</a>
+    <a href="/terms-of-service" class:list={["px-4 underline-offset-2 transition-colors duration-300 hover:text-muted-foreground", url === "/terms-of-service" ? "underline" : ""]}>Terms of Service</a>
   </div>
   &copy; {new Date().getFullYear()} MinionAH. All rights reserved.
 </footer>
