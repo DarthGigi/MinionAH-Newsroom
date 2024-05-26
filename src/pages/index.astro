@@ -10,7 +10,7 @@ const posts = (await getCollection("blog")).filter((post) => post.data.isPublic 
 ---
 
 <!doctype html>
-<html lang="en" class="dark scroll-smooth bg-[#131313] text-white">
+<html lang="en" class="data-[font=minecraft]:font-minecraft dark scroll-smooth bg-muted pb-[env(safe-area-inset-bottom)] pt-[env(safe-area-inset-top)] text-foreground">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
@@ -26,7 +26,7 @@ const posts = (await getCollection("blog")).filter((post) => post.data.isPublic 
                 if (index === 0) {
                   // Apply first post styles
                   return (
-                    <li class="relative m-0 block h-[426px] w-[341px] list-none overflow-hidden rounded-xl bg-[#131313] p-0 transition-colors duration-500 hover:bg-neutral-950 sm:h-[457px] sm:w-[366px] md:h-[389px] md:w-[692px] xl:h-[551px] xl:w-[980px]">
+                    <li class="relative m-0 block h-[426px] w-[341px] list-none overflow-hidden rounded-xl bg-[#171717] p-0 transition-colors duration-500 hover:bg-neutral-950 sm:h-[457px] sm:w-[366px] md:h-[389px] md:w-[692px] xl:h-[551px] xl:w-[980px]">
                       <a href={`/${post.slug}/`} class="group relative block h-full w-full bg-black transition-colors duration-500 visited:no-underline hover:bg-transparent hover:[text-decoration:none] group-hover:hover:[text-decoration:none]">
                         <img transition:name={post.data.heroImage} src={post.data.heroImage} alt="heroImage" class="pointer-events-none z-0 h-full w-full overflow-hidden rounded-xl object-cover object-center transition-all duration-500 [mask-image:linear-gradient(180deg,rgba(0,0,0,1),transparent_100%)] group-hover:scale-95" />
                         <div class="absolute bottom-0 z-20 w-full">
