@@ -17,7 +17,8 @@ export default defineConfig({
     tailwind({
       config: {
         applyBaseStyles: false
-      }
+      },
+      configFile: "tailwind.config.js"
     }),
     robotsTxt(),
     svelte(),
