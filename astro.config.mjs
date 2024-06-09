@@ -21,7 +21,14 @@ export default defineConfig({
     }),
     robotsTxt(),
     svelte(),
-    playformCompress()
+    playformCompress({
+      CSS: false,
+      Image: {
+        sharp: {
+          gif: false
+        }
+      }
+    })
   ],
   markdown: {
     remarkPlugins: [remarkToc],
