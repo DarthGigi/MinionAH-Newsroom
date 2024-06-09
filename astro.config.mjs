@@ -23,6 +23,7 @@ export default defineConfig({
     svelte(),
     playformCompress({
       CSS: false,
+      HTML: false,
       Image: {
         sharp: {
           gif: false
