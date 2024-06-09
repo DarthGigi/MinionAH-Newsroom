@@ -28,7 +28,7 @@
   class="mx-auto p-0"
   opts={{ loop: true }}
   plugins={[plugin, WheelGesturesPlugin({ forceWheelAxis: "y" })]}
-  on:mousenter={plugin.stop}
+  on:mouseenter={plugin.stop}
   on:mouseleave={() => {
     plugin.play();
     plugin.reset();
