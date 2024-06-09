@@ -14,6 +14,7 @@ const { isPublic = true, title, description, pubDate, type, heroImage } = Astro.
 const posts = (await getCollection("blog")).filter((post) => post.data.isPublic !== false).sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 
 const currentIndex = posts.findIndex((post) => post.slug === Astro.params.slug);
+const post = posts[currentIndex];
 const previousPost = posts[currentIndex + 1]?.slug;
 const nextPost = posts[currentIndex - 1]?.slug;
 ---
@@ -42,8 +43,8 @@ const nextPost = posts[currentIndex - 1]?.slug;
         <div class="mx-auto mb-5 mt-0 max-w-2xl">
           <div class="mx-auto">
             <div class="relative z-50 text-xs font-bold text-neutral-300">
-              <span class="relative z-50 block uppercase" transition:name={title + type}>{type}</span>
-              <span class="relative z-50 mt-1 block text-sm font-semibold" transition:name={"pubDate" + (pubDate.getUTCFullYear() + pubDate.getUTCMonth() + pubDate.getUTCDate()).toString()}>
+              <span class="relative z-50 block uppercase" transition:name={post.slug + type}>{type}</span>
+              <span class="relative z-50 mt-1 block text-sm font-semibold" transition:name={post.slug + pubDate}>
                 <FormattedDate date={pubDate} />
               </span>
             </div>
@@ -51,19 +52,19 @@ const nextPost = posts[currentIndex - 1]?.slug;
         </div>
         <div class="mx-auto mb-0 mt-0 max-w-2xl">
           <div class="mx-auto">
-            <h1 class="relative z-50 text-5xl font-bold text-white" transition:name={title}>{title}</h1>
+            <h1 class="relative z-50 text-5xl font-bold text-white" transition:name={post.slug + title}>{title}</h1>
           </div>
         </div>
         {
           description && (
-            <div transition:animate={slide({ duration: "700ms" })} class="mx-auto mb-0 mt-5 max-w-2xl ">
+            <div transition:animate={slide({ duration: "700ms" })} class="mx-auto mb-0 mt-5 max-w-2xl">
               <div class="mx-auto">
                 <p class="relative z-50 text-2xl font-medium leading-7 text-white" set:html={description} />
               </div>
             </div>
           )
         }
-        {heroImage && <img src={heroImage} transition:name={heroImage} alt="heroImage" class="mx-auto" />}
+        {heroImage && <img src={heroImage} transition:name={post.slug + heroImage} alt="heroImage" class="mx-auto" />}
         <div class="prose-lg mx-auto leading-[1.688rem]">
           <slot />
         </div>
