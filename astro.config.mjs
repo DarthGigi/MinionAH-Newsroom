@@ -1,12 +1,13 @@
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
+import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
+import vercel from "@astrojs/vercel/serverless";
+import playformCompress from "@playform/compress";
 import robotsTxt from "astro-robots-txt";
 import { defineConfig } from "astro/config";
-import remarkToc from "remark-toc";
 import rehypeExternalLinks from "rehype-external-links";
-import svelte from "@astrojs/svelte";
-import playformCompress from "@playform/compress";
+import remarkToc from "remark-toc";
 
 // https://astro.build/config
 export default defineConfig({
@@ -35,5 +36,9 @@ export default defineConfig({
       ]
     ]
   },
-  prefetch: true
+  prefetch: true,
+  output: "server",
+  adapter: vercel({
+    isr: true
+  })
 });
