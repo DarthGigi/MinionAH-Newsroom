@@ -26,7 +26,7 @@
       {@const isActive = value === tab.value}
       <Tabs.Trigger value={tab.value} class="relative text-secondary-foreground transition-colors duration-300 data-[state=active]:bg-transparent data-[state=active]:text-primary-foreground" data-sveltekit-noscroll>
         {#if isActive}
-          <div class="absolute inset-0 rounded-md bg-primary" in:send={{ key: "active-tab" }} out:receive={{ key: "active-tab" }}></div>
+          <div class="absolute inset-0 rounded-sm bg-primary" in:send={{ key: "active-tab" }} out:receive={{ key: "active-tab" }}></div>
         {/if}
         <div class="relative">
           {tab.title}
