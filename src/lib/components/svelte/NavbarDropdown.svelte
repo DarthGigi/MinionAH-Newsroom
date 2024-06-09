@@ -24,7 +24,7 @@
         <Home class="size-4" />Home
       </DropdownMenu.Item>
       <DropdownMenu.Separator class="bg-border" />
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="">
+      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="https://minionah.com">
         <Pickaxe class="size-4" />MinionAH
       </DropdownMenu.Item>
       <DropdownMenu.Item target="_blank" class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="https://discord.minionah.com">
