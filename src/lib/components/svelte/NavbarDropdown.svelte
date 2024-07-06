@@ -1,13 +1,12 @@
 <script lang="ts">
   import * as DropdownMenu from "$lib/components/ui/dropdown-menu";
   import ChevronDown from "lucide-svelte/icons/chevron-down";
-  import Home from "lucide-svelte/icons/home";
-  import Newspaper from "lucide-svelte/icons/newspaper";
-  import Users from "lucide-svelte/icons/users";
   import CircleHelp from "lucide-svelte/icons/circle-help";
   import Code from "lucide-svelte/icons/code";
-  import Scale from "lucide-svelte/icons/scale";
+  import House from "lucide-svelte/icons/house";
   import Pickaxe from "lucide-svelte/icons/pickaxe";
+  import Scale from "lucide-svelte/icons/scale";
+  import Users from "lucide-svelte/icons/users";
 
   let menuDropdownOpen = false;
 </script>
@@ -21,7 +20,7 @@
   <DropdownMenu.Content class="w-44 border-border bg-popover" transitionConfig={{ duration: 300 }}>
     <DropdownMenu.Group>
       <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="/">
-        <Home class="size-4" />Home
+        <House class="size-4" />Home
       </DropdownMenu.Item>
       <DropdownMenu.Separator class="bg-border" />
       <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="https://minionah.com">
