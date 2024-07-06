@@ -30,3 +30,5 @@ To make it even easier, you can also sort the minions by their type, craft cost,
 <div class="border border-border rounded-lg p-4">
   <img src="/assets/images/pricechecker-update/actions.png" class="max-h-[48rem] !w-auto mx-auto" alt="Actions"/>
 </div>
+
+Try it out yourself: <a href="https://minionah.com/pricecheck" class="text-primary">MinionAH Price Checker</a>
