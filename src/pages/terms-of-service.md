@@ -5,7 +5,7 @@ description: "These Terms of Service govern your use of MinionAH."
 isPublic: true
 type: "ToS"
 pubDate: "November 14, 2023"
-lastUpdated: "February 3, 2024"
+lastUpdated: "August 15, 2024"
 ---
 
 By accessing or using MinionAH, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not use MinionAH.
@@ -25,8 +25,8 @@ The software is designed to be used by accessing it through a web browser.
 The software is supported by any device that can run a modern web browser. We recommend using the latest version of your web browser or at least:
 
 - Google Chrome 110 (or any Chromium-based browser with the Chromium version 110)
-- Mozilla Firefox 110
-- Safari 16
+- Mozilla Firefox 122
+- Safari 16.1
 
 When using MinionAH, you agree to:
 
@@ -34,7 +34,9 @@ When using MinionAH, you agree to:
 - Not use MinionAH in any way that is unlawful, illegal, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.
 - Not share or distribute malicious clones of MinionAH.
 - Keep your login credentials secure and do not share them with unauthorized users.
-- Ensure that you meet any age requirements and have parental consent if you are under a certain age.
+- Ensure that you meet any age requirements for using Social Media Platforms and have parental consent if you are under the age of majority in your jurisdiction.
+
+By using MinionAH, you agree to comply with these terms and conditions and our [Privacy Policy](/privacy-policy). If you do not agree to these terms, you may not use MinionAH.
 
 ## User Feedback and Support
 
@@ -52,7 +54,7 @@ The software is owned by Gigi and is operated by the MinionAH team. Your use of 
 
 ### Code
 
-[MinionAH is an open-source project](https://github.com/DarthGigi/MinionAH) licensed under the [GNU Affero General Public License v3.0 (AGPL-3.0)](https://github.com/DarthGigi/MinionAH/blob/main/LICENSE). This means that you are free to use, modify, and distribute the source code of MinionAH, as long as you respect the terms of the license and, as stated above, you do not share or distribute malicious clones of MinionAH.
+[MinionAH is a source-available project](https://github.com/DarthGigi/MinionAH) licensed under the [MinionAH License v1.0 (MAHL-1.0)](https://github.com/DarthGigi/MinionAH/blob/main/LICENSE). This means that you can view the source code and contribute to the project, but you cannot redistribute the software or any modifications you make to it.
 
 ## Termination
 
