@@ -5,7 +5,7 @@ description: "This Privacy Policy describes how MinionAH collects, uses, stores,
 isPublic: true
 type: "Policy"
 pubDate: "November 14, 2023"
-lastUpdated: "February 3, 2024"
+lastUpdated: "August 15, 2024"
 ---
 
 Please read this policy carefully to understand how we use and handle your personal information.
@@ -33,7 +33,7 @@ We may use and process the following types of personal information:
 - User-agent
 - Cookies
 
-In addition to the above, we use Vercel Analytics and Vercel Speed Insights, these are privacy-friendly and do not collect any personal information, they are fully anonymous.
+In addition to the above, we use Vercel Analytics, Vercel Speed Insights, and Sentry, these are privacy-friendly and do not collect any personal information, they are fully anonymous.
 
 We aim to use the minimum amount of data possible to provide our services. We believe that user privacy should be kept at the core of our products. **We simply do not want or care about your data.**
 
@@ -79,6 +79,12 @@ We process your personal information for the following purposes:
 
   This data is not stored in our database; instead, it is stored in Vercel's database. We do not have access to this raw data.
 
+- Sentry:
+
+  We use Sentry to collect anonymous error data, which is privacy-friendly. You can [read Sentry's Privacy Policy here](https://sentry.io/privacy/).
+
+  This data is not stored in our database; instead, it is stored in Sentry's database. We do not have access to this raw data.
+
 ## Third-Party Sharing
 
 We do not share your personal information with any third parties and will aim to never do so. If, for some reason, we ever do (a highly unlikely event), we will first notify you and ask for your explicit consent.
@@ -86,6 +92,8 @@ We do not share your personal information with any third parties and will aim to
 ## Security Measures
 
 We try to implement security measures to protect your personal information from unauthorized access, loss, misuse, alteration, or disclosure.
+
+We also try to ensure that our servers, databases, and any third-party services we use have servers and databases in the European Union (EU) or the European Economic Area (EEA) to comply with the General Data Protection Regulation (GDPR).
 
 ## User Rights
 
