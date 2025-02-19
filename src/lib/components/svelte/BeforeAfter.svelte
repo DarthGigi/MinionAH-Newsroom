@@ -4,10 +4,9 @@
   import { cubicInOut } from "svelte/easing";
   import { crossfade } from "svelte/transition";
 
-  export let before: string;
-  export let after: string;
+  const { before, after }: { before: string; after: string } = $props();
 
-  let value = "before";
+  let value = $state("before");
 
   const tabs = [
     { title: "Before", value: "before" },
