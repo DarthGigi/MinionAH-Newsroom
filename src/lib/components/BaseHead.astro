@@ -2,7 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "$/app.css";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 export interface Props {
   title: string;
@@ -26,7 +26,7 @@ const { title, description, image = "/assets/images/ogBanner.png?v=2" } = Astro.
 
 <!-- Primary Meta Tags -->
 <title>{title} — MinionAH Newsroom</title>
-<ViewTransitions />
+<ClientRouter />
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta name="keywords" content="MinionAH, Hypixel SkyBlock, minions, auction house, minion trading, skyblock auction, skyblock minions, Hypixel minions, buy minions, sell minions, newsroom, minionah newsroom, minionah news, minionah updates" />

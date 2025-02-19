@@ -1,22 +1,22 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import { getCollection } from "astro:content";
 import BaseHead from "$lib/components/BaseHead.astro";
-import Header from "$lib/components/Header.astro";
 import Footer from "$lib/components/Footer.astro";
 import FormattedDate from "$lib/components/FormattedDate.astro";
+import Header from "$lib/components/Header.astro";
 import { Button } from "$lib/components/ui/button";
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
 import { slide } from "astro:transitions";
 
 type Props = CollectionEntry<"blog">["data"];
 
 const { isPublic = true, title, description, pubDate, type, heroImage } = Astro.props;
-const posts = (await getCollection("blog")).filter((post) => post.data.isPublic !== false).sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
+const posts = (await getCollection("blog")).filter((post) => post.data.isPublic !== false).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const currentIndex = posts.findIndex((post) => post.slug === Astro.params.slug);
+const currentIndex = posts.findIndex((post) => post.id === Astro.params.slug);
 const post = posts[currentIndex];
-const previousPost = posts[currentIndex + 1]?.slug;
-const nextPost = posts[currentIndex - 1]?.slug;
+const previousPost = posts[currentIndex + 1]?.id;
+const nextPost = posts[currentIndex - 1]?.id;
 ---
 
 <html lang="en">
@@ -43,8 +43,8 @@ const nextPost = posts[currentIndex - 1]?.slug;
         <div class="mx-auto mb-5 mt-0 max-w-2xl">
           <div class="mx-auto">
             <div class="relative z-50 text-xs font-bold text-neutral-300">
-              <span class="relative z-50 block uppercase" transition:name={post.slug + type}>{type}</span>
-              <span class="relative z-50 mt-1 block text-sm font-semibold" transition:name={post.slug + pubDate}>
+              <span class="relative z-50 block uppercase" transition:name={post.id + type}>{type}</span>
+              <span class="relative z-50 mt-1 block text-sm font-semibold" transition:name={post.id + pubDate}>
                 <FormattedDate date={pubDate} />
               </span>
             </div>
@@ -52,7 +52,7 @@ const nextPost = posts[currentIndex - 1]?.slug;
         </div>
         <div class="mx-auto mb-0 mt-0 max-w-2xl">
           <div class="mx-auto">
-            <h1 class="relative z-50 text-5xl font-bold text-white" transition:name={post.slug + title}>{title}</h1>
+            <h1 class="relative z-50 text-5xl font-bold text-white" transition:name={post.id + title}>{title}</h1>
           </div>
         </div>
         {
@@ -64,7 +64,7 @@ const nextPost = posts[currentIndex - 1]?.slug;
             </div>
           )
         }
-        {heroImage && <img src={heroImage} transition:name={post.slug + heroImage} alt="heroImage" class="mx-auto" />}
+        {heroImage && <img src={heroImage} transition:name={post.id + heroImage} alt="heroImage" class="mx-auto" />}
         <div class="prose-lg mx-auto leading-[1.688rem]">
           <slot />
         </div>
