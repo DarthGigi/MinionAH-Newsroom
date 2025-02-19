@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { Button } from "$lib/components/ui/button";
   import * as DropdownMenu from "$lib/components/ui/dropdown-menu";
   import ChevronDown from "lucide-svelte/icons/chevron-down";
   import CircleHelp from "lucide-svelte/icons/circle-help";
@@ -17,10 +18,12 @@
     <h1>Newsroom<span class="sr-only">: The Auction House for SkyBlock Minions</span></h1>
     <ChevronDown class="h-4 w-4" />
   </DropdownMenu.Trigger>
-  <DropdownMenu.Content class="w-44 border-border bg-popover" transitionConfig={{ duration: 300 }}>
+  <DropdownMenu.Content class="w-44 border-border bg-popover">
     <DropdownMenu.Group>
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="/">
-        <House class="size-4" />Home
+      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background">
+        {#snippet child({ props })}
+          <Button href="/" {...props}><House class="size-4" />Home</Button>
+        {/snippet}
       </DropdownMenu.Item>
       <DropdownMenu.Separator class="bg-border" />
       <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="https://minionah.com">

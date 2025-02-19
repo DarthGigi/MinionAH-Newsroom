@@ -1,35 +1,37 @@
 <script lang="ts">
   import * as Card from "$lib/components/ui/card/index.ts";
+  import { type CarouselAPI } from "$lib/components/ui/carousel/context.ts";
   import * as Carousel from "$lib/components/ui/carousel/index.ts";
+  import { getMediaType } from "$lib/utilities";
   import Autoplay from "embla-carousel-autoplay";
   import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
-  import { type CarouselAPI } from "$lib/components/ui/carousel/context.ts";
-  import { getMediaType } from "$lib/utilities";
+
+  const { items = [], showSlideNumbers = true }: { items: string[]; showSlideNumbers: boolean } = $props();
 
   const plugin = Autoplay({ delay: 3000, stopOnInteraction: true });
 
-  export let items: string[] = [];
-  export let showSlideNumbers: boolean = true;
+  let api = $state<CarouselAPI>();
+  let current = $state(0);
 
-  let api: CarouselAPI;
-  let count = 0;
-  let current = 0;
-  $: if (api) {
-    count = api.scrollSnapList().length;
-    current = api.selectedScrollSnap() + 1;
-    api.on("select", () => {
+  const count = $derived(api ? api.scrollSnapList().length : 0);
+
+  $effect(() => {
+    if (api) {
       current = api.selectedScrollSnap() + 1;
-    });
-  }
+      api.on("select", () => {
+        current = api!.selectedScrollSnap() + 1;
+      });
+    }
+  });
 </script>
 
 <Carousel.Root
-  bind:api
+  setApi={(emblaApi) => (api = emblaApi)}
   class="mx-auto p-0"
   opts={{ loop: true }}
   plugins={[plugin, WheelGesturesPlugin({ forceWheelAxis: "y" })]}
-  on:mouseenter={plugin.stop}
-  on:mouseleave={() => {
+  onmouseenter={plugin.stop}
+  onmouseleave={() => {
     plugin.play();
     plugin.reset();
   }}
