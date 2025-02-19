@@ -1,25 +1,23 @@
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
-import tailwind from "@astrojs/tailwind";
 import playformCompress from "@playform/compress";
+import tailwindcss from "@tailwindcss/vite";
 import robotsTxt from "astro-robots-txt";
 import { defineConfig } from "astro/config";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkToc from "remark-toc";
 
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://newsroom.minionah.com/",
+  vite: {
+    plugins: [tailwindcss()]
+  },
   integrations: [
     mdx(),
     sitemap(),
-    tailwind({
-      config: {
-        applyBaseStyles: false
-      },
-      configFile: "tailwind.config.js"
-    }),
     robotsTxt(),
     svelte(),
     playformCompress({

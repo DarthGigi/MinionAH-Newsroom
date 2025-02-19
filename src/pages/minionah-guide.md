@@ -69,7 +69,7 @@ If your minions are mithril infused, you can simply toggle the switch and your a
 
 To purchase a minion, simply start a chat with the user by clicking the purchase button on the auctions:
 
-<video muted={true} loop={true} playsinline={true} autoPlay={true} class="mx-auto max-h-96 !w-auto rounded-lg" alt="Purchase">
+<video muted={true} loop={true} playsinline={true} autoPlay={true} class="mx-auto max-h-96 w-auto! rounded-lg" alt="Purchase">
   <source src="assets/videos/minionah-guide/purchase.mp4" type="video/mp4" />
 </video>
 

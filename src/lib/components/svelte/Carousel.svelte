@@ -42,9 +42,9 @@
         <Card.Root class="flex h-full items-center justify-center border-border bg-popover p-0">
           <Card.Content class="flex items-center justify-center rounded-lg p-4">
             {#if getMediaType(item) === "image"}
-              <img src={item} alt="media" class="pointer-events-none mx-auto max-h-96 !w-auto" />
+              <img src={item} alt="media" class="pointer-events-none mx-auto max-h-96 w-auto!" />
             {:else if getMediaType(item) === "video"}
-              <video class="pointer-events-none mx-auto max-h-96 !w-auto" autoPlay={true} muted={true} loop={true}>
+              <video class="pointer-events-none mx-auto max-h-96 w-auto!" autoPlay={true} muted={true} loop={true}>
                 <source src={item} type={`video/${item.split(".").pop()}`} />
               </video>
             {:else}

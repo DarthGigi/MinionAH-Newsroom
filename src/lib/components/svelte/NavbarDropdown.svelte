@@ -20,30 +20,30 @@
   </DropdownMenu.Trigger>
   <DropdownMenu.Content class="w-44 border-border bg-popover">
     <DropdownMenu.Group>
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background">
+      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background">
         {#snippet child({ props })}
           <Button href="/" {...props}><House class="size-4" />Home</Button>
         {/snippet}
       </DropdownMenu.Item>
       <DropdownMenu.Separator class="bg-border" />
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="https://minionah.com">
+      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="https://minionah.com">
         <Pickaxe class="size-4" />MinionAH
       </DropdownMenu.Item>
-      <DropdownMenu.Item target="_blank" class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="https://discord.minionah.com">
+      <DropdownMenu.Item target="_blank" class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="https://discord.minionah.com">
         <Users class="size-4" />Community
       </DropdownMenu.Item>
       <DropdownMenu.Separator class="bg-border" />
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="/minionah/">
+      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="/minionah/">
         <CircleHelp class="size-4" />About
       </DropdownMenu.Item>
-      <DropdownMenu.Item target="_blank" class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="https://github.com/DarthGigi/MinionAH">
+      <DropdownMenu.Item target="_blank" class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="https://github.com/DarthGigi/MinionAH">
         <Code class="size-4" /> GitHub
       </DropdownMenu.Item>
       <DropdownMenu.Separator class="bg-border" />
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="/privacy-policy">
+      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="/privacy-policy">
         <Scale class="size-4" />Privacy Policy
       </DropdownMenu.Item>
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-[highlighted]:bg-background" href="/terms-of-service">
+      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="/terms-of-service">
         <Scale class="size-4" />Terms of Service
       </DropdownMenu.Item>
     </DropdownMenu.Group>

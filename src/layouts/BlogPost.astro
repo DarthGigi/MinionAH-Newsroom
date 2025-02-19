@@ -30,7 +30,7 @@ const nextPost = posts[currentIndex - 1]?.id;
     </div>
     <Header />
     <main class:list={[isPublic ? "" : "hidden", "relative overflow-hidden py-8"]}>
-      <article class="prose prose-lg prose-neutral !prose-invert relative mx-auto mt-6 max-w-4xl px-4 py-4 prose-headings:scroll-m-20 prose-a:text-white prose-img:pointer-events-none prose-img:w-full prose-img:rounded-lg prose-video:w-full prose-video:rounded-lg sm:px-4 lg:px-6">
+      <article class="prose prose-lg prose-neutral prose-invert! relative mx-auto mt-6 max-w-4xl px-4 py-4 prose-headings:scroll-m-20 prose-a:text-white prose-img:pointer-events-none prose-img:w-full prose-img:rounded-lg prose-video:w-full prose-video:rounded-lg sm:px-4 lg:px-6">
         <style>
           article *:not(img) {
             max-width: 42rem;
