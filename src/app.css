@@ -133,7 +133,13 @@
     @apply hidden;
   }
 
-  video {
+  [data-tabs-root] video,
+  [data-tabs-root] img {
+    @apply my-0!;
+  }
+
+  video,
+  img {
     @apply pointer-events-none;
   }
 
