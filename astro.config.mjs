@@ -18,7 +18,14 @@ export default defineConfig({
     mdx(),
     sitemap(),
     robotsTxt(),
-    svelte(),
+    svelte({
+      dynamicCompileOptions({ filename, compileOptions }) {
+        // Dynamically set runes mode per Svelte file
+        if (!filename.includes("node_modules") && !compileOptions.runes) {
+          return { runes: true };
+        }
+      }
+    }),
     playformCompress({
       CSS: false,
       HTML: false,
