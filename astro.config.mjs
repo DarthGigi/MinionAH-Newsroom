@@ -8,7 +8,6 @@ import { defineConfig } from "astro/config";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkToc from "remark-toc";
 
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://newsroom.minionah.com/",

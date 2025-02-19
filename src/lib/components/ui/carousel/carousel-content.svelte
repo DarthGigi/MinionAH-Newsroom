@@ -22,8 +22,7 @@
     },
     plugins: emblaCtx.plugins
   }}
-  on:emblaInit={emblaCtx.onInit}
->
+  on:emblaInit={emblaCtx.onInit}>
   <div bind:this={ref} class={cn("flex", emblaCtx.orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col", className)} data-embla-container="" {...restProps}>
     {@render children?.()}
   </div>

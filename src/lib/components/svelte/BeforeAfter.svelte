@@ -20,13 +20,13 @@
   });
 </script>
 
-<Tabs.Root bind:value class="flex h-[30rem] shrink flex-col justify-between rounded-lg border border-border bg-popover p-4">
-  <Tabs.List class="mx-auto bg-secondary">
+<Tabs.Root bind:value class="border-border bg-popover flex h-[30rem] shrink flex-col justify-between rounded-lg border p-4">
+  <Tabs.List class="bg-secondary mx-auto">
     {#each tabs as tab}
       {@const isActive = value === tab.value}
-      <Tabs.Trigger value={tab.value} class="relative text-secondary-foreground transition-colors duration-300 data-[state=active]:bg-transparent data-[state=active]:text-primary-foreground" data-sveltekit-noscroll>
+      <Tabs.Trigger value={tab.value} class="text-secondary-foreground data-[state=active]:text-primary-foreground relative transition-colors duration-300 data-[state=active]:bg-transparent" data-sveltekit-noscroll>
         {#if isActive}
-          <div class="absolute inset-0 rounded-sm bg-primary" in:send={{ key: "active-tab" }} out:receive={{ key: "active-tab" }}></div>
+          <div class="bg-primary absolute inset-0 rounded-sm" in:send={{ key: "active-tab" }} out:receive={{ key: "active-tab" }}></div>
         {/if}
         <div class="relative">
           {tab.title}

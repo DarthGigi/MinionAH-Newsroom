@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Button } from "$lib/components/ui/button";
   import * as DropdownMenu from "$lib/components/ui/dropdown-menu";
   import ChevronDown from "lucide-svelte/icons/chevron-down";
   import CircleHelp from "lucide-svelte/icons/circle-help";
@@ -13,38 +12,65 @@
 </script>
 
 <DropdownMenu.Root bind:open={menuDropdownOpen}>
-  <DropdownMenu.Trigger class="flex items-center gap-2 rounded-md px-4 py-2 hover:bg-popover">
+  <DropdownMenu.Trigger class="hover:bg-popover flex items-center gap-2 rounded-md px-4 py-2">
     <img class="pointer-events-none block h-8 w-auto transition-transform duration-300 ease-in-out" src="/assets/favicons/favicon.png" alt="MinionAH Logo" class:rotate-45={menuDropdownOpen} class:max-md:-rotate-45={menuDropdownOpen} />
     <h1>Newsroom<span class="sr-only">: The Auction House for SkyBlock Minions</span></h1>
     <ChevronDown class="h-4 w-4" />
   </DropdownMenu.Trigger>
-  <DropdownMenu.Content class="w-44 border-border bg-popover">
+  <DropdownMenu.Content class="border-border bg-popover w-44">
     <DropdownMenu.Group>
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background">
+      <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
         {#snippet child({ props })}
-          <Button href="/" {...props}><House class="size-4" />Home</Button>
+          <a href="/" {...props}>
+            <House class="size-4" />
+            Home
+          </a>
         {/snippet}
       </DropdownMenu.Item>
       <DropdownMenu.Separator class="bg-border" />
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="https://minionah.com">
-        <Pickaxe class="size-4" />MinionAH
+      <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
+        {#snippet child({ props })}
+          <a href="https://minionah.com" {...props}>
+            <Pickaxe class="size-4" />MinionAH
+          </a>
+        {/snippet}
       </DropdownMenu.Item>
-      <DropdownMenu.Item target="_blank" class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="https://discord.minionah.com">
-        <Users class="size-4" />Community
+      <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
+        {#snippet child({ props })}
+          <a href="https://discord.minionah.com" target="_blank" {...props}>
+            <Users class="size-4" />Community
+          </a>
+        {/snippet}
       </DropdownMenu.Item>
       <DropdownMenu.Separator class="bg-border" />
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="/minionah/">
-        <CircleHelp class="size-4" />About
+      <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
+        {#snippet child({ props })}
+          <a href="/minionah/" {...props}>
+            <CircleHelp class="size-4" />About
+          </a>
+        {/snippet}
       </DropdownMenu.Item>
-      <DropdownMenu.Item target="_blank" class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="https://github.com/DarthGigi/MinionAH">
-        <Code class="size-4" /> GitHub
+      <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
+        {#snippet child({ props })}
+          <a href="https://github.com/DarthGigi/MinionAH" target="_blank" {...props}>
+            <Code class="size-4" /> GitHub
+          </a>
+        {/snippet}
       </DropdownMenu.Item>
       <DropdownMenu.Separator class="bg-border" />
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="/privacy-policy">
-        <Scale class="size-4" />Privacy Policy
+      <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
+        {#snippet child({ props })}
+          <a href="/privacy-policy" {...props}>
+            <Scale class="size-4" />Privacy Policy
+          </a>
+        {/snippet}
       </DropdownMenu.Item>
-      <DropdownMenu.Item class="gap-1.5 hover:cursor-pointer data-highlighted:bg-background" href="/terms-of-service">
-        <Scale class="size-4" />Terms of Service
+      <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
+        {#snippet child({ props })}
+          <a href="/terms-of-service" {...props}>
+            <Scale class="size-4" />Terms of Service
+          </a>
+        {/snippet}
       </DropdownMenu.Item>
     </DropdownMenu.Group>
   </DropdownMenu.Content>
