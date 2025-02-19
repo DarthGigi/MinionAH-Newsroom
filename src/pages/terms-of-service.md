@@ -5,7 +5,7 @@ description: "These Terms of Service govern your use of MinionAH."
 isPublic: true
 type: "ToS"
 pubDate: "November 14, 2023"
-lastUpdated: "August 15, 2024"
+lastUpdated: "Feb 19, 2025"
 ---
 
 By accessing or using MinionAH, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not use MinionAH.
@@ -25,8 +25,8 @@ The software is designed to be used by accessing it through a web browser.
 The software is supported by any device that can run a modern web browser. We recommend using the latest version of your web browser or at least:
 
 - Google Chrome 110 (or any Chromium-based browser with the Chromium version 110)
-- Mozilla Firefox 122
-- Safari 16.1
+- Mozilla Firefox 122 (or any Gecko-based browser with the Gecko version 122)
+- Safari 16.4 (or any WebKit-based browser with the WebKit version 16.4)
 
 When using MinionAH, you agree to:
 
