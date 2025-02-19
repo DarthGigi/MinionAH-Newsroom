@@ -8,7 +8,7 @@
   import Scale from "lucide-svelte/icons/scale";
   import Users from "lucide-svelte/icons/users";
 
-  let menuDropdownOpen = false;
+  let menuDropdownOpen = $state(false);
 </script>
 
 <DropdownMenu.Root bind:open={menuDropdownOpen}>
