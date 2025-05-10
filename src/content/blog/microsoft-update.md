@@ -23,7 +23,7 @@ There are also some other benefits to this new login system, for example, we no 
 On the login page, we try to explain the login process as detailed as possible, to ensure that you know what's happening with your data.
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/microsoft-update/loginPage.png" class="max-h-[48rem] w-auto! mx-auto" alt="Login page"/>
+  <img src="/assets/images/microsoft-update/loginPage.png" class="max-h-192 w-auto! mx-auto" alt="Login page"/>
 </div>
 
 ## Profile
@@ -53,7 +53,7 @@ Speaking of 3D stuff, we also added 3D to the minion cards when you hover over t
 We also made some changes to the mobile version of the website. The navigation bar is now at the bottom of the screen, which makes it easier to reach with your thumb.
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/microsoft-update/mobileView.png" class="max-h-[48rem] w-auto! mx-auto" alt="Mobile view"/>
+  <img src="/assets/images/microsoft-update/mobileView.png" class="max-h-192 w-auto! mx-auto" alt="Mobile view"/>
 </div>
 
 ## Performance

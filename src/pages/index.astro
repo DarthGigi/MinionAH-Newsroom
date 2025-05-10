@@ -19,17 +19,17 @@ const posts = (await getCollection("blog")).filter((post) => post.data.isPublic 
     <Header />
     <main class="mt-4 p-4 text-left leading-6 tracking-tight">
       <section class="mt-0 overflow-hidden pb-20 md:px-10">
-        <div class="mx-auto max-w-[21rem] leading-6 tracking-tight sm:max-w-[23rem] md:max-w-[43.25rem] xl:max-w-[61.25rem]">
+        <div class="mx-auto max-w-84 leading-6 tracking-tight sm:max-w-92 md:max-w-173 xl:max-w-245">
           <h2 class="mb-6 text-3xl font-bold tracking-normal">Latest News</h2>
-          <ul class="m-0 flex shrink-0 grow-0 items-stretch justify-center gap-4 p-0 text-left leading-6 tracking-tight [content:''] [flex-flow:_row_wrap] lg:justify-between">
+          <ul class="m-0 flex shrink-0 grow-0 items-stretch justify-center gap-4 p-0 text-left leading-6 tracking-tight [content:''] [flex-flow:row_wrap] lg:justify-between">
             {
               posts.map((post, index) => {
                 if (index === 0) {
                   // Apply first post styles
                   return (
-                    <li class="bg-background hover:bg-popover relative m-0 block h-[26rem] w-[21rem] list-none overflow-hidden rounded-xl p-0 transition-colors duration-500 sm:h-[28.5rem] sm:w-[23rem] md:h-96 md:w-[43.25rem] xl:h-[34.5rem] xl:w-[61.25rem]">
+                    <li class="bg-background hover:bg-popover relative m-0 block h-104 w-84 list-none overflow-hidden rounded-xl p-0 transition-colors duration-500 sm:h-114 sm:w-92 md:h-96 md:w-173 xl:h-138 xl:w-245">
                       <a href={`/${post.id}/`} class="group bg-background relative block h-full w-full visited:no-underline hover:[text-decoration:none] hover:group-hover:[text-decoration:none]">
-                        <img transition:name={post.id + post.data.heroImage} src={post.data.heroImage} alt="heroImage" class={cn("pointer-events-none z-0 h-full w-full overflow-hidden rounded-xl object-cover object-center transition-all duration-500 [mask-image:linear-gradient(to_bottom,black_50%,transparent_100%)] group-hover:scale-[1.03]", post.data.classes)} />
+                        <img transition:name={post.id + post.data.heroImage} src={post.data.heroImage} alt="heroImage" class={cn("pointer-events-none z-0 h-full w-full overflow-hidden rounded-xl object-cover object-center transition-all duration-500 mask-[linear-gradient(to_bottom,black_50%,transparent_100%)] group-hover:scale-[1.03]", post.data.classes)} />
                         <div class="absolute bottom-0 z-20 w-full">
                           <div class="box-border flex w-full shrink-0 grow flex-col px-9 pb-9">
                             <div>
@@ -53,7 +53,7 @@ const posts = (await getCollection("blog")).filter((post) => post.data.isPublic 
                   return (
                     <li class="md relative m-0 flex w-full shrink list-none p-0 last:even:mx-auto lg:w-[calc(50%-1rem)]">
                       <a href={`/${post.id}/`} class="group border-accent bg-background relative z-0 flex h-full w-full flex-col overflow-hidden rounded-xl border-2 visited:no-underline hover:[text-decoration:none] hover:group-hover:[text-decoration:none]">
-                        <div class="border-accent relative h-64 min-h-[auto] w-full shrink basis-auto overflow-hidden border-b">
+                        <div class="border-accent relative h-64 min-h-auto w-full shrink basis-auto overflow-hidden border-b">
                           <img transition:name={post.id + post.data.heroImage} src={post.data.heroImage} alt="heroImage" class={cn("pointer-events-none h-full w-full rounded-t-[0.625rem] object-cover object-center transition-all duration-500 group-hover:scale-[1.03]", post.data.classes)} />
                         </div>
                         <div class="flex shrink-0 grow basis-auto flex-col justify-between p-8">

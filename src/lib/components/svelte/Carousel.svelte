@@ -35,7 +35,7 @@
     plugin.play();
     plugin.reset();
   }}>
-  <Carousel.Content class="h-[30rem] p-0">
+  <Carousel.Content class="h-120 p-0">
     {#each items as item}
       <Carousel.Item>
         <Card.Root class="border-border bg-popover flex h-full items-center justify-center p-0">
