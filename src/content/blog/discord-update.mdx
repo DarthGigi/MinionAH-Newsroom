@@ -1,0 +1,88 @@
+---
+title: "The Discord Update"
+description: "We've integrated Discord into MinionAH, released a bot and more!"
+isPublic: true
+type: "Update"
+pubDate: "May 10, 2025"
+heroImage: "/assets/images/discord-update/banner.png"
+---
+
+import BeforeAfter from "$lib/components/svelte/BeforeAfter.svelte";
+
+After months of hard work, we are excited to announce the release of our Discord integration! This update brings a lot of new features and improvements to MinionAH, including a Discord bot, a new login notification method, and more!
+
+## Table of Contents
+
+## Discord Integration
+We have added a new feature that allows you to link your Discord account to your MinionAH account. This will allow you to receive notifications on Discord when you receive a new message on MinionAH. It will also allow you to use our bot to manage your auctions, more on that later.
+
+To link your Discord account, go to your [profile settings](https://minionah.com/profile/settings) and click on the "Connect your Discord account", follow the instructions and you are good to go!
+
+<div class="border border-border rounded-lg p-4">
+  <img src="/assets/images/discord-update/profile-settings-before.png" class="max-h-192 w-auto! mx-auto" alt="Profile settings before"/>
+</div>
+
+If you're skeptical about this integration, Discord shows you which permissions we request. So if you're uncomfortable with any of them, you don't have to link your account.
+
+<div class="border border-border rounded-lg p-4">
+  <img src="/assets/images/discord-update/profile-settings-after.png" class="max-h-192 w-auto! mx-auto" alt="Profile settings after"/>
+</div>
+
+
+## Notifications
+We've overhauled the notification system, as the old notification system was a bit clunky and not very user-friendly.
+
+We've removed the merging of Email & Device option and also the "None" option. Instead, you can now check or uncheck the ways you want to receive notifications. 
+
+<BeforeAfter before="/assets/images/discord-update/notifications-before.png" after="/assets/images/discord-update/notifications-after.png" client:visible />
+
+As you can see, we've also added a new option: "Discord". This will allow you to receive notifications on Discord when you receive a new message on MinionAH.
+
+<div class="border border-border rounded-lg p-4">
+  <img src="/assets/images/discord-update/discord-notification.png" class="max-h-192 w-auto! mx-auto" alt="Discord notification"/>
+</div>
+
+Some of the notification options require additional setup, you can click the warning icon (⚠️) to see what you need to do and also test if everything is working as expected.
+
+<div class="border border-border rounded-lg p-4">
+  <img src="/assets/images/discord-update/additional-setup.png" class="max-h-192 w-auto! mx-auto" alt="Additional setup"/>
+</div>
+
+
+## Discord Bot
+We have also released a Discord bot that allows you to manage your auctions directly from Discord.
+
+You can use the bot to:
+ - Create and delete auctions
+ - Browse all the auctions right from Discord
+ - Check the prices of the minions
+ - Receive notifications when you receive a new message on MinionAH
+- And much more to come in the future!
+
+<div class="border border-border rounded-lg p-4">
+  <img src="/assets/images/discord-update/bot-discovery.png" class="max-h-192 w-auto! mx-auto" alt="Bot discovery"/>
+</div>
+
+You can [add the bot to your server and/or account](https://discord.com/discovery/applications/1276266745463705601) and start using it right away.
+
+## Miscellaneous
+
+We have also made a lot of other small improvements and bug fixes, one of them is the new "Negotiable" option in the auction creation page.
+
+<div class="border border-border rounded-lg p-4">
+  <img src="/assets/images/discord-update/negotiable-option.png" class="max-h-192 w-auto! mx-auto" alt="Negotiable option"/>
+</div>
+
+This will indicate that you are open to negotiation on the price of your auction.
+
+<div class="border border-border rounded-lg p-4">
+  <img src="/assets/images/discord-update/negotiable-icon.png" class="max-h-192 w-auto! mx-auto" alt="Negotiable icon"/>
+</div>
+
+We've also replaced the Skyblock coin icon with a more fitting one that matches the rest of the site.
+
+<BeforeAfter before="/assets/images/discord-update/coin-icon-before.png" after="/assets/images/discord-update/coin-icon-after.png" client:visible />
+
+## Notes
+
+I'd like to give a huge thank you to Nikos ([@andriotisnikos1](https://github.com/andriotisnikos1)) and Rio ([@RioTheDev](https://github.com/RioTheDev)) for making the Discord bot!
