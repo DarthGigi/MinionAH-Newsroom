@@ -29,18 +29,18 @@ const posts = (await getCollection("blog")).filter((post) => post.data.isPublic 
                   return (
                     <li class="bg-background hover:bg-popover relative m-0 block h-104 w-84 list-none overflow-hidden rounded-xl p-0 transition-colors duration-500 sm:h-114 sm:w-92 md:h-96 md:w-173 xl:h-138 xl:w-245">
                       <a href={`/${post.id}/`} class="group bg-background relative block h-full w-full visited:no-underline hover:[text-decoration:none] hover:group-hover:[text-decoration:none]">
-                        <img transition:name={post.id + post.data.heroImage} src={post.data.heroImage} alt="heroImage" class={cn("pointer-events-none z-0 h-full w-full overflow-hidden rounded-xl object-cover object-center transition-all duration-500 mask-[linear-gradient(to_bottom,black_50%,transparent_100%)] group-hover:scale-[1.03]", post.data.classes)} />
+                        <img transition:name={post.id + post.data.heroImage} src={post.data.heroImage} alt="heroImage" class={cn("pointer-events-none z-0 h-full w-full overflow-hidden rounded-xl object-cover object-center transition-all duration-500 group-hover:scale-[1.03]", post.data.classes)} />
                         <div class="absolute bottom-0 z-20 w-full">
                           <div class="box-border flex w-full shrink-0 grow flex-col px-9 pb-9">
                             <div>
-                              <div class="text-xs font-semibold text-white uppercase sm:mb-3 md:text-sm" transition:name={post.id + post.data.type}>
+                              <div class="text-xs font-semibold text-white uppercase text-shadow-lg sm:mb-3 md:text-sm" transition:name={post.id + post.data.type}>
                                 {post.data.type}
                               </div>
-                              <div class="text-xl font-bold md:text-4xl" transition:name={post.id + post.data.title}>
+                              <div class="text-xl font-bold text-shadow-lg md:text-4xl" transition:name={post.id + post.data.title}>
                                 {post.data.title}
                               </div>
                             </div>
-                            <div class="font-semibold text-white sm:mt-3" transition:name={post.id + post.data.pubDate}>
+                            <div class="font-semibold text-white text-shadow-lg sm:mt-3" transition:name={post.id + post.data.pubDate}>
                               <FormattedDate date={post.data.pubDate} />
                             </div>
                           </div>
