@@ -4,3 +4,12 @@ pnpm-lock.yaml
 yarn.lock
 bun.lock
 bun.lockb
+
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
