@@ -18,9 +18,9 @@ export default ts.config(
   ...svelte.configs.prettier,
   {
     languageOptions: {
-      globals: { ...globals.browser, ...globals.node }
+      globals: { ...globals.browser, ...globals.node },
     },
-    rules: { "no-undef": "off" }
+    rules: { "no-undef": "off" },
   },
   {
     files: ["**/*.svelte", "**/*.svelte.ts", "**/*.svelte.js"],
@@ -30,12 +30,12 @@ export default ts.config(
         projectService: true,
         extraFileExtensions: [".svelte"],
         parser: ts.parser,
-        svelteConfig
-      }
+        svelteConfig,
+      },
     },
     rules: {
-      "prefer-const": "off"
-    }
+      "prefer-const": "off",
+    },
   },
   {
     rules: {
@@ -43,12 +43,12 @@ export default ts.config(
         "error",
         {
           argsIgnorePattern: "^_",
-          varsIgnorePattern: "^_"
-        }
+          varsIgnorePattern: "^_",
+        },
       ],
       "@typescript-eslint/no-unused-expressions": "off",
-      "@typescript-eslint/no-empty-object-type": "off"
-    }
+      "@typescript-eslint/no-empty-object-type": "off",
+    },
   },
   {
     ignores: [
@@ -59,7 +59,7 @@ export default ts.config(
       "sites/docs/.svelte-kit/**/*",
       ".svelte-kit",
       "packages/runed/dist/**/*",
-      "packages/runed/.svelte-kit/**/*"
-    ]
+      "packages/runed/.svelte-kit/**/*",
+    ],
   }
 );
