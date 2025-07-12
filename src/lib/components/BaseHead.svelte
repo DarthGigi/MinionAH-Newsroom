@@ -27,8 +27,8 @@
   <meta property="og:url" content={page.url.href} />
   <meta property="og:title" content={`${title} — MinionAH Newsroom`} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={new URL(image, page.url).href} />
-  <meta property="og:image:secure_url" content={new URL(image, page.url).href} />
+  <meta property="og:image" content={image} />
+  <meta property="og:image:secure_url" content={image} />
   <meta property="og:image:alt" content={title} />
   {#if image && image !== "/assets/images/ogBanner.png?v=2"}
     <meta property="og:image:width" content="1200" />
@@ -39,5 +39,5 @@
   <meta property="twitter:url" content={page.url.href} />
   <meta property="twitter:title" content={title} />
   <meta property="twitter:description" content={description} />
-  <meta property="twitter:image" content={new URL(image, page.url).href} />
+  <meta property="twitter:image" content={image} />
 </svelte:head>
