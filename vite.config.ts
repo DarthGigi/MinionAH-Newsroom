@@ -13,5 +13,5 @@ export default defineConfig({
       allow: [resolve(__dirname, "./.velite")],
     },
   },
-  // assetsInclude: ["**/*.md", "**/*.mdx"],
+  assetsInclude: ["**/*.md"],
 });
