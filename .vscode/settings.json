@@ -23,11 +23,5 @@
   },
   "javascript.updateImportsOnFileMove.enabled": "prompt",
   "typescript.updateImportsOnFileMove.enabled": "prompt",
-  "eslint.validate": ["javascript", "typescript", "svelte", "astro"],
-  "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
-  },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  }
+  "eslint.validate": ["javascript", "typescript", "svelte"]
 }

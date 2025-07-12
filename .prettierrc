@@ -2,12 +2,29 @@
   "useTabs": false,
   "tabWidth": 2,
   "singleQuote": false,
-  "trailingComma": "none",
+  "trailingComma": "es5",
   "bracketSameLine": true,
-  "printWidth": 999999,
-  "plugins": ["prettier-plugin-astro", "prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+  "semi": true,
+  "printWidth": 100,
+  "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
   "overrides": [
-    { "files": "*.astro", "options": { "parser": "astro" } },
-    { "files": "*.svelte", "options": { "parser": "svelte" } }
-  ]
+    {
+      "files": "*.svelte",
+      "options": {
+        "parser": "svelte"
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "parser": "markdown",
+        "printWidth": 100,
+        "proseWrap": "always",
+        "useTabs": true,
+        "trailingComma": "none",
+        "bracketSameLine": true
+      }
+    }
+  ],
+  "tailwindFunctions": ["clsx", "cn", "tv"]
 }

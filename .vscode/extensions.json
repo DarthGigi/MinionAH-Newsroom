@@ -1,4 +1,11 @@
 {
-  "recommendations": ["astro-build.astro-vscode"],
+  "recommendations": [
+    "edwinhuish.better-comments-next",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "Selemondev.vscode-shadcn-svelte",
+    "svelte.svelte-vscode",
+    "bradlc.vscode-tailwindcss"
+  ],
   "unwantedRecommendations": []
 }

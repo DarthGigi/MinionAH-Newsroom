@@ -1,8 +1,7 @@
 .DS_Store
 node_modules
-/build
-/.svelte-kit
-/package
+**/build
+**/.svelte-kit
 .env
 .env.*
 !.env.example
@@ -11,3 +10,13 @@ node_modules
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+**/.changeset/
+.prettierrc
+.vercel
+.contentlayer
+**/dist
+**/.github
+CHANGELOG.md
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+sites/docs/src/routes/api/search.json/**/*
