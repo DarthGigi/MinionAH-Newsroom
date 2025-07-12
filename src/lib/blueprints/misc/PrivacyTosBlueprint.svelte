@@ -37,8 +37,7 @@
     children: Snippet;
   } = $props();
 
-  const { classes, description, heroImage, isPublic, pubDate, title, type, lastUpdated } =
-    $derived(metadata);
+  const { description, pubDate, title, type, lastUpdated } = $derived(metadata);
 
   const pubDateFormat = $derived(new Date(pubDate));
   const lastUpdatedFormat = $derived(lastUpdated ? new Date(lastUpdated) : null);
