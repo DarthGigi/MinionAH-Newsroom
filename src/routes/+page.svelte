@@ -26,6 +26,8 @@
                 <img
                   src={post.metadata.heroImage}
                   alt="heroImage"
+                  fetchpriority="high"
+                  loading="eager"
                   class={cn(
                     "pointer-events-none z-0 h-full w-full overflow-hidden rounded-xl object-cover object-center transition-all duration-500 group-hover:scale-[1.03]",
                     post.metadata.classes
