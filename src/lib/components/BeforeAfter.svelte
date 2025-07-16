@@ -49,7 +49,7 @@
           in:send={{ key: "active-image" }}
           out:receive={{ key: "active-image" }}
           src={before}
-          class="pointer-events-none m-0 mx-auto max-h-98 rounded-lg"
+          class="pointer-events-none m-0 mx-auto max-h-98 rounded-lg object-contain"
           alt="Before" />
       {:else if getMediaType(before) === "video"}
         <video
@@ -67,7 +67,10 @@
   <Tabs.Content value="after" class="h-full">
     <div class="flex h-full items-center">
       {#if getMediaType(after) === "image"}
-        <img src={after} class="pointer-events-none m-0 mx-auto max-h-98 rounded-lg" alt="After" />
+        <img
+          src={after}
+          class="pointer-events-none m-0 mx-auto max-h-98 rounded-lg object-contain"
+          alt="After" />
       {:else if getMediaType(after) === "video"}
         <video
           class="pointer-events-none m-0 mx-auto max-h-98 rounded-lg"
