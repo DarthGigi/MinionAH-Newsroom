@@ -3,5 +3,5 @@
 
 export const SITE_TITLE = "MinionAH Newsroom";
 export const SITE_DESCRIPTION =
-  "MinionAH Newsroom is the source for news about MinionAH. Read new announcements, stay up-to-date, watch video's and download images.";
+  "MinionAH Newsroom is the source for news about MinionAH. Read new announcements and stay up-to-date.";
 export const SITE_URL = "https://newsroom.minionah.com";
