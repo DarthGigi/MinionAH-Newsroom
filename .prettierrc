@@ -24,6 +24,12 @@
         "trailingComma": "none",
         "bracketSameLine": true
       }
+    },
+    {
+      "files": "*.jsonc",
+      "options": {
+        "trailingComma": "none"
+      }
     }
   ],
   "tailwindFunctions": ["clsx", "cn", "tv"]
