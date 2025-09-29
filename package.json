@@ -65,13 +65,5 @@
       "esbuild",
       "sharp"
     ]
-  },
-  "engines": {
-    "node": "^22",
-    "pnpm": "^10",
-    "deno": "forbidden, use node instead",
-    "npm": "forbidden, use pnpm instead",
-    "yarn": "forbidden, use pnpm instead",
-    "bun": "forbidden, use pnpm instead"
   }
 }
