@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import * as DropdownMenu from "$lib/components/ui/dropdown-menu";
   import ChevronDown from "@lucide/svelte/icons/chevron-down";
   import CircleHelp from "@lucide/svelte/icons/circle-help";
@@ -24,7 +25,7 @@
     <DropdownMenu.Group>
       <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
         {#snippet child({ props })}
-          <a href="/" {...props}>
+          <a href={resolve("/")} {...props}>
             <House class="size-4" />
             Home
           </a>
@@ -48,7 +49,7 @@
       <DropdownMenu.Separator class="bg-border" />
       <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
         {#snippet child({ props })}
-          <a href="/minionah/" {...props}>
+          <a href={resolve("/[slug]", { slug: "minionah" })} {...props}>
             <CircleHelp class="size-4" />About
           </a>
         {/snippet}
@@ -63,14 +64,14 @@
       <DropdownMenu.Separator class="bg-border" />
       <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
         {#snippet child({ props })}
-          <a href="/privacy-policy" {...props}>
+          <a href={resolve("/[slug]", { slug: "privacy-policy" })} {...props}>
             <Scale class="size-4" />Privacy Policy
           </a>
         {/snippet}
       </DropdownMenu.Item>
       <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
         {#snippet child({ props })}
-          <a href="/terms-of-service" {...props}>
+          <a href={resolve("/[slug]", { slug: "terms-of-service" })} {...props}>
             <Scale class="size-4" />Terms of Service
           </a>
         {/snippet}

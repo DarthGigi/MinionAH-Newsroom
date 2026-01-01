@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import { page } from "$app/state";
   import { cn } from "$lib/utils";
 
@@ -14,13 +15,13 @@
       class="hover:text-muted-foreground px-4 underline-offset-2 transition-colors duration-300"
       >MinionAH</a>
     <a
-      href="/privacy-policy"
+      href={resolve("/[slug]", { slug: "privacy-policy" })}
       class={cn(
         "hover:text-muted-foreground px-4 underline-offset-2 transition-colors duration-300",
         { underline: url === "/privacy-policy" }
       )}>Privacy Policy</a>
     <a
-      href="/terms-of-service"
+      href={resolve("/[slug]", { slug: "terms-of-service" })}
       class={cn(
         "hover:text-muted-foreground px-4 underline-offset-2 transition-colors duration-300",
         { underline: url === "/terms-of-service" }

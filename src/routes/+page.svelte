@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import BaseHead from "$lib/components/BaseHead.svelte";
   import FormattedDate from "$lib/components/FormattedDate.svelte";
   import { SITE_DESCRIPTION, SITE_TITLE } from "$lib/consts";
@@ -21,7 +22,7 @@
             <li
               class="bg-background hover:bg-popover relative m-0 block h-104 w-84 list-none overflow-hidden rounded-xl p-0 transition-colors duration-500 sm:h-114 sm:w-92 md:h-96 md:w-173 xl:h-138 xl:w-245">
               <a
-                href={`/${post.slug}`}
+                href={resolve("/[slug]", { slug: post.slug })}
                 class="group bg-background relative block h-full w-full visited:no-underline hover:[text-decoration:none] hover:group-hover:[text-decoration:none]">
                 <img
                   src={post.metadata.heroImage}
@@ -54,7 +55,7 @@
             <li
               class="md relative m-0 flex w-full shrink list-none p-0 last:even:mx-auto lg:w-[calc(50%-1rem)]">
               <a
-                href={`/${post.slug}`}
+                href={resolve("/[slug]", { slug: post.slug })}
                 class="group border-accent bg-background relative z-0 flex h-full w-full flex-col overflow-hidden rounded-xl border-2 visited:no-underline hover:[text-decoration:none] hover:group-hover:[text-decoration:none]">
                 <div
                   class="border-accent relative h-64 min-h-auto w-full shrink basis-auto overflow-hidden border-b">
