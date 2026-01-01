@@ -2,7 +2,7 @@
   "recommendations": [
     "edwinhuish.better-comments-next",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
+    "prettier.prettier-vscode",
     "Selemondev.vscode-shadcn-svelte",
     "svelte.svelte-vscode",
     "bradlc.vscode-tailwindcss"
