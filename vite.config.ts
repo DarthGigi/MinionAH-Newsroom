@@ -7,7 +7,7 @@ import devtoolsJson from "vite-plugin-devtools-json";
 const __dirname = new URL(".", import.meta.url).pathname;
 
 export default defineConfig({
-  plugins: [sveltekit(), tailwindcss(), devtoolsJson()],
+  plugins: [tailwindcss(), sveltekit(), devtoolsJson()],
   server: {
     fs: {
       allow: [resolve(__dirname, "./.velite")],
