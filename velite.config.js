@@ -7,6 +7,7 @@ const baseSchema = s.object({
   title: s.string(),
   description: s.string().transform((value) => value.replace(/\n/g, "<br>")),
   type: s.string().optional(),
+  project: s.string().optional(),
   pubDate: s
     .string()
     .or(s.date())
