@@ -7,7 +7,7 @@ isPublic: true
 type: "Update"
 project: "MinionAH"
 pubDate: "November 14, 2023"
-heroImage: "/assets/images/chat-update/banner.png"
+heroImage: "/assets/images/minionah/chat-update/banner.png"
 ---
 
 <script lang="ts">
@@ -41,7 +41,7 @@ when they log in.
     autoPlay={true}
     class="mx-auto max-h-96"
     alt="chat overview">
-    <source src="/assets/videos/chat-update/unreadAlert.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/chat-update/unreadAlert.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -55,7 +55,7 @@ unread messages.
     autoPlay={true}
     class="mx-auto max-h-96"
     alt="chat overview">
-    <source src="/assets/videos/chat-update/chatOverview.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/chat-update/chatOverview.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -67,7 +67,7 @@ However, if you still wish to contact someone via Discord, their username and ID
 As you can see, the chat interface is heavily inspired by Apple iMessage.
 
 <div class="border-border rounded-lg border p-4">
-  <img src="/assets/images/chat-update/chat.png" class="mx-auto max-h-96" alt="chat" />
+  <img src="/assets/images/minionah/chat-update/chat.png" class="mx-auto max-h-96" alt="chat" />
 </div>
 
 Please keep in mind that:
@@ -90,14 +90,14 @@ the seller has set if any.
 The minion and user hover effects have also been redesigned. It's now a bit more useful where it
 shows some more information about the minion and user with a beautiful tooltip.
 
-<BeforeAfter before="/assets/videos/chat-update/cardOld.mp4"
-after="/assets/videos/chat-update/cardNew.mp4" />
+<BeforeAfter before="/assets/videos/minionah/chat-update/cardOld.mp4"
+after="/assets/videos/minionah/chat-update/cardNew.mp4" />
 
 The Mithril icon now also displays a tooltip for those who don't know what the icon stands for.
 
 <div class="border-border rounded-lg border p-4 select-none">
   <img
-    src="/assets/images/chat-update/mithrilTooltip.png"
+    src="/assets/images/minionah/chat-update/mithrilTooltip.png"
     class="mx-auto max-h-96"
     alt="Mithril Tooltip"
   />
@@ -112,24 +112,24 @@ including the Tier selector and all inputs throughout the website.
 For example, the minion selector now has a search bar to make it easier to find the minion you're
 looking for.
 
-<BeforeAfter before="/assets/videos/chat-update/minionSelectOld.mp4"
-after="/assets/videos/chat-update/minionSelectNew.mp4" />
+<BeforeAfter before="/assets/videos/minionah/chat-update/minionSelectOld.mp4"
+after="/assets/videos/minionah/chat-update/minionSelectNew.mp4" />
 
 The minion auction card has also given a face-lift. It now has a more modern and consistent look.
 
-<BeforeAfter before="/assets/images/chat-update/profileBefore.png"
-after="/assets/images/chat-update/profileAfter.png" />
+<BeforeAfter before="/assets/images/minionah/chat-update/profileBefore.png"
+after="/assets/images/minionah/chat-update/profileAfter.png" />
 
 The dialogs have also been redesigned to be more consistent with the rest of the website and provide
 more information.
 
-<BeforeAfter before="/assets/images/chat-update/profileDeleteFormBefore.png"
-after="/assets/images/chat-update/profileDeleteFormAfter.png" />
+<BeforeAfter before="/assets/images/minionah/chat-update/profileDeleteFormBefore.png"
+after="/assets/images/minionah/chat-update/profileDeleteFormAfter.png" />
 
 ---
 
-<BeforeAfter before="/assets/images/chat-update/profileDeleteFormSuccessBefore.png"
-after="/assets/images/chat-update/profileDeleteFormSuccessAfter.png" class="mt-3" />
+<BeforeAfter before="/assets/images/minionah/chat-update/profileDeleteFormSuccessBefore.png"
+after="/assets/images/minionah/chat-update/profileDeleteFormSuccessAfter.png" class="mt-3" />
 
 ## Other Changes
 
@@ -147,14 +147,14 @@ The share button has a new animation.
     autoPlay={true}
     class="mx-auto max-h-96"
     alt="chat overview">
-    <source src="/assets/videos/chat-update/shareButtonAnimation.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/chat-update/shareButtonAnimation.mp4" type="video/mp4" />
   </video>
 </div>
 
 The load more button has also been redesigned.
 
-<BeforeAfter before="/assets/videos/chat-update/loadMoreButtonBefore.mp4"
-after="/assets/videos/chat-update/loadMoreButtonAfter.mp4" />
+<BeforeAfter before="/assets/videos/minionah/chat-update/loadMoreButtonBefore.mp4"
+after="/assets/videos/minionah/chat-update/loadMoreButtonAfter.mp4" />
 
 ## Notes
 

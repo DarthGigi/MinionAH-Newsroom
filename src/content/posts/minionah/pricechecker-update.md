@@ -7,7 +7,7 @@ isPublic: true
 type: "Update"
 project: "MinionAH"
 pubDate: "July 6, 2024"
-heroImage: "/assets/images/pricechecker-update/banner.png"
+heroImage: "/assets/images/minionah/pricechecker-update/banner.png"
 ---
 
 We already had this system in place for a while, for example, when you hover over a minion card; you
@@ -18,7 +18,7 @@ We also had an API for developers to get the price of any minion:
 user-friendly now, is it? That's why we decided to add a dedicated page for it.
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/pricechecker-update/pricechecker.png" class="max-h-192 mx-auto" alt="Price checker"/>
+  <img src="/assets/images/minionah/pricechecker-update/pricechecker.png" class="max-h-192 mx-auto" alt="Price checker"/>
 </div>
 
 ## Price Checker
@@ -30,7 +30,7 @@ the price of, and you're done.
 It even automatically sorts the minions based on their tier after you search!
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/pricechecker-update/search.png" class="max-h-192 mx-auto" alt="Search"/>
+  <img src="/assets/images/minionah/pricechecker-update/search.png" class="max-h-192 mx-auto" alt="Search"/>
 </div>
 
 To make it even easier, you can also sort the minions by their type, craft cost, or tier. If you
@@ -38,7 +38,7 @@ want more information about a minion, you can click on the 3 dots next to each m
 wiki you want to visit for that minion.
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/pricechecker-update/actions.png" class="max-h-192 mx-auto" alt="Actions"/>
+  <img src="/assets/images/minionah/pricechecker-update/actions.png" class="max-h-192 mx-auto" alt="Actions"/>
 </div>
 
 Try it out yourself: <a href="https://minionah.com/pricecheck" class="text-primary">MinionAH Price

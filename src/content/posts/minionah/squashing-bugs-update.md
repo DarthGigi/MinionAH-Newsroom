@@ -7,7 +7,7 @@ isPublic: true
 type: "Update"
 project: "MinionAH"
 pubDate: "January 20, 2024"
-heroImage: "/assets/images/squashing-bugs-update/banner.png"
+heroImage: "/assets/images/minionah/squashing-bugs-update/banner.png"
 ---
 
 <script lang="ts">
@@ -21,13 +21,13 @@ heroImage: "/assets/images/squashing-bugs-update/banner.png"
 The website has received a design overhaul. The design is now more consistent, looks better, and
 matches MinionAH's design language:
 
-<MediaCarousel items={["/assets/images/squashing-bugs-update/minecraft-profile.png",
-"/assets/images/squashing-bugs-update/minions-profile.png",
-"/assets/images/squashing-bugs-update/delete-minion.png",
-"/assets/images/squashing-bugs-update/select-minion.png",
-"/assets/images/squashing-bugs-update/select-tier.png",
-"/assets/images/squashing-bugs-update/preferences.png",
-"/assets/images/squashing-bugs-update/chats.png"]} />
+<MediaCarousel items={["/assets/images/minionah/squashing-bugs-update/minecraft-profile.png",
+"/assets/images/minionah/squashing-bugs-update/minions-profile.png",
+"/assets/images/minionah/squashing-bugs-update/delete-minion.png",
+"/assets/images/minionah/squashing-bugs-update/select-minion.png",
+"/assets/images/minionah/squashing-bugs-update/select-tier.png",
+"/assets/images/minionah/squashing-bugs-update/preferences.png",
+"/assets/images/minionah/squashing-bugs-update/chats.png"]} />
 
 ## Preferences
 
@@ -36,7 +36,7 @@ liking. You can change the font and the numerical system.
 
 <div class="border-border rounded-lg border p-4">
   <video muted={true} loop={true} autoPlay={true} class="mx-auto max-h-96" alt="Preferences">
-    <source src="/assets/videos/squashing-bugs-update/preferences.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/squashing-bugs-update/preferences.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -51,7 +51,7 @@ much faster.
 
 <div class="border-border rounded-lg border p-4">
   <video muted={true} loop={true} autoPlay={true} class="mx-auto max-h-96" alt="Embed">
-    <source src="/assets/videos/squashing-bugs-update/embed.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/squashing-bugs-update/embed.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -67,7 +67,7 @@ When you send a message it will show a status icon to show if it was sent succes
 
 <div class="border-border rounded-lg border p-4">
   <video muted={true} loop={true} autoPlay={true} class="mx-auto max-h-96" alt="Message Status">
-    <source src="/assets/videos/squashing-bugs-update/message-status.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/squashing-bugs-update/message-status.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -77,7 +77,7 @@ The messages now have a nice animation when they are sent.
 
 <div class="border-border rounded-lg border p-4">
   <video muted={true} loop={true} autoPlay={true} class="mx-auto max-h-96" alt="Message Animation">
-    <source src="/assets/videos/squashing-bugs-update/message-animation.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/squashing-bugs-update/message-animation.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -85,7 +85,7 @@ They also show the date they were sent on when you hover over them.
 
 <div class="border-border rounded-lg border p-4">
   <video muted={true} loop={true} autoPlay={true} class="mx-auto max-h-96" alt="Message Date Animation">
-    <source src="/assets/videos/squashing-bugs-update/message-date-animation.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/squashing-bugs-update/message-date-animation.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -101,7 +101,7 @@ click on a user in a card, it will now take you to their profile:
 
 <div class="border-border rounded-lg border p-4">
   <video muted={true} loop={true} autoPlay={true} class="mx-auto max-h-96" alt="User Click">
-    <source src="/assets/videos/squashing-bugs-update/user-click.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/squashing-bugs-update/user-click.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -113,7 +113,7 @@ for you:
 
 <div class="border-border rounded-lg border p-4">
   <video muted={true} loop={true} autoPlay={true} class="mx-auto max-h-96" alt="Minion Auto Search">
-    <source src="/assets/videos/squashing-bugs-update/auto-search.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/squashing-bugs-update/auto-search.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -124,7 +124,7 @@ The user popup now also has an info button that takes you to the user's
 that user.
 
 <div class="border-border rounded-lg border p-4">
-  <img src="/assets/images/squashing-bugs-update/user-popup.png" alt="User Popup" />
+  <img src="/assets/images/minionah/squashing-bugs-update/user-popup.png" alt="User Popup" />
 </div>
 
 ## QOL

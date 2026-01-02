@@ -7,7 +7,7 @@ isPublic: true
 type: "Update"
 project: "MinionAH"
 pubDate: "December 4, 2023"
-heroImage: "/assets/images/microsoft-update/banner.png"
+heroImage: "/assets/images/minionah/microsoft-update/banner.png"
 ---
 
 The general idea of this update has been on our minds since the beginning of the website. At the
@@ -36,7 +36,7 @@ On the login page, we try to explain the login process as detailed as possible, 
 know what's happening with your data.
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/microsoft-update/loginPage.png" class="max-h-192 mx-auto" alt="Login page"/>
+  <img src="/assets/images/minionah/microsoft-update/loginPage.png" class="max-h-192 mx-auto" alt="Login page"/>
 </div>
 
 ## Profile
@@ -46,7 +46,7 @@ cleaner and more beautiful profile overview.
 
 <div class="border border-border rounded-lg p-4">
   <video muted={true} loop={true} autoPlay={true} class="max-h-96 mx-auto" alt="Profile page">
-    <source src="/assets/videos/microsoft-update/profilePage.mp4" type="video/mp4"/>
+    <source src="/assets/videos/minionah/microsoft-update/profilePage.mp4" type="video/mp4"/>
   </video>
 </div>
 
@@ -60,7 +60,7 @@ the minion and user heads to see them from all angles.
 
 <div class="border border-border rounded-lg p-4">
   <video muted={true} loop={true} autoPlay={true} class="max-h-96 mx-auto" alt="Minion card">
-    <source src="/assets/videos/microsoft-update/minionCard.mp4" type="video/mp4"/>
+    <source src="/assets/videos/minionah/microsoft-update/minionCard.mp4" type="video/mp4"/>
   </video>
 </div>
 
@@ -70,7 +70,7 @@ We also made some changes to the mobile version of the website. The navigation b
 bottom of the screen, which makes it easier to reach with your thumb.
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/microsoft-update/mobileView.png" class="max-h-192 mx-auto" alt="Mobile view"/>
+  <img src="/assets/images/minionah/microsoft-update/mobileView.png" class="max-h-192 mx-auto" alt="Mobile view"/>
 </div>
 
 ## Performance

@@ -7,7 +7,7 @@ isPublic: true
 type: "Release"
 project: "MinionAH"
 pubDate: "June 10, 2024"
-heroImage: "/assets/images/minionah-v2/banner.png"
+heroImage: "/assets/images/minionah/minionah-v2/banner.png"
 classes: "object-contain"
 ---
 
@@ -52,7 +52,7 @@ you're both online.
 
 <div class="border-border rounded-lg border p-4">
   <video muted loop autoplay class="mx-auto max-h-96" alt="Real-time chat">
-    <source src="/assets/videos/minionah-v2/real-time-chat.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/minionah-v2/real-time-chat.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -68,7 +68,7 @@ styles.
 
 <div class="border-border rounded-lg border p-4">
   <video muted loop autoplay class="mx-auto max-h-96" alt="Message styling">
-    <source src="/assets/videos/minionah-v2/message-styles.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/minionah-v2/message-styles.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -79,7 +79,7 @@ send.
 
 <div class="border-border rounded-lg border p-4">
   <video muted loop autoplay class="mx-auto max-h-96" alt="Sending images">
-    <source src="/assets/videos/minionah-v2/image-chats.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/minionah-v2/image-chats.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -88,7 +88,7 @@ send.
 The chat overview page has gotten a big redesign, the cards are now bigger and show more
 information. The buttons have also been labeled so you know what they do.
 
-<BeforeAfter before="/assets/images/squashing-bugs-update/chats.png" after="/assets/images/minionah-v2/chats-overview.png" />
+<BeforeAfter before="/assets/images/minionah/squashing-bugs-update/chats.png" after="/assets/images/minionah/minionah-v2/chats-overview.png" />
 
 ## Notifications
 
@@ -96,7 +96,7 @@ We have been working on a notification system for a while now, and it's finally 
 receive notifications for various events on MinionAH, mainly when someone sends you a message.
 
 <div class="border-border rounded-lg border p-4">
-  <img src="/assets/images/minionah-v2/notification-settings.png" alt="Notification settings" />
+  <img src="/assets/images/minionah/minionah-v2/notification-settings.png" alt="Notification settings" />
 </div>
 
 ### Device Notifications
@@ -109,7 +109,7 @@ native app. You will have to go through some extra steps to enable notifications
 but it's worth it!
 
 <div class="border-border rounded-lg border p-4">
-  <img src="/assets/images/minionah-v2/ios-notification.jpeg" alt="Device notification" />
+  <img src="/assets/images/minionah/minionah-v2/ios-notification.jpeg" alt="Device notification" />
 </div>
 
 ### Email Notifications
@@ -123,7 +123,7 @@ and add your email address, then go to your
 notifications.
 
 <div class="border-border rounded-lg border p-4">
-  <img src="/assets/images/minionah-v2/email-notification.png" alt="Email notification" />
+  <img src="/assets/images/minionah/minionah-v2/email-notification.png" alt="Email notification" />
 </div>
 
 ## Profiles
@@ -135,13 +135,13 @@ To get started, go to your [profile settings](https://minionah.com/profile/setti
 fields.
 
 <div class="border-border rounded-lg border p-4">
-  <img src="/assets/images/minionah-v2/profile-settings.png" alt="Profile settings" />
+  <img src="/assets/images/minionah/minionah-v2/profile-settings.png" alt="Profile settings" />
 </div>
 
 Then, whenever someone visits your profile, they will see the redesigned profiles with your bio and
 social media links.
 
-<BeforeAfter before="/assets/images/minionah-v2/old-profile.png" after="/assets/images/minionah-v2/new-profile.png" />
+<BeforeAfter before="/assets/images/minionah/minionah-v2/old-profile.png" after="/assets/images/minionah/minionah-v2/new-profile.png" />
 
 ## QOL Improvements
 
@@ -154,7 +154,7 @@ We have replaced it with a small toast notification that appears at the bottom o
 less intrusive and doesn't block the whole screen.
 
 <div class="border-border rounded-lg border p-4">
-  <img src="/assets/images/minionah-v2/toast-notification.png" alt="Toast notification" />
+  <img src="/assets/images/minionah/minionah-v2/toast-notification.png" alt="Toast notification" />
 </div>
 
 ### Limits
@@ -168,7 +168,7 @@ Breadcrumbs show you where you are on MinionAH and allow you to quickly navigate
 page.
 
 <div class="border-border rounded-lg border p-4">
-  <img src="/assets/images/minionah-v2/breadcrumbs.png" alt="Breadcrumbs" />
+  <img src="/assets/images/minionah/minionah-v2/breadcrumbs.png" alt="Breadcrumbs" />
 </div>
 
 ### Infinite Scroll
@@ -177,7 +177,7 @@ We have also added a new preference, infinite scroll. When enabled, MinionAH wil
 as you scroll down the page, so you no longer have to click the "Load More" button.
 
 <div class="border-border rounded-lg border p-4">
-  <img src="/assets/images/minionah-v2/preferences-scroll.png" alt="Infinite scroll" />
+  <img src="/assets/images/minionah/minionah-v2/preferences-scroll.png" alt="Infinite scroll" />
 </div>
 
 ### Search
@@ -187,7 +187,7 @@ bar, instead, you can choose a minion or a user from the dropdown to search.
 
 <div class="border-border rounded-lg border p-4">
   <video muted loop autoplay class="mx-auto max-h-96" alt="Search bar">
-    <source src="/assets/videos/minionah-v2/search.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/minionah-v2/search.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -199,7 +199,7 @@ as possible.
 
 <div class="border-border rounded-lg border p-4">
   <video muted loop autoplay class="mx-auto max-h-96" alt="Bug report">
-    <source src="/assets/videos/minionah-v2/bug.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/minionah-v2/bug.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -208,10 +208,10 @@ as possible.
 We have made a lot of design improvements, too many to list here. But enough to say that MinionAH
 looks a lot better now.
 
-<MediaCarousel items={["/assets/images/minionah-v2/design-changes/minion-create.png",
-"/assets/images/minionah-v2/design-changes/minion-delete.png",
-"/assets/images/minionah-v2/design-changes/login.png",
-"/assets/images/minionah-v2/design-changes/signup.png"]} />
+<MediaCarousel items={["/assets/images/minionah/minionah-v2/design-changes/minion-create.png",
+"/assets/images/minionah/minionah-v2/design-changes/minion-delete.png",
+"/assets/images/minionah/minionah-v2/design-changes/login.png",
+"/assets/images/minionah/minionah-v2/design-changes/signup.png"]} />
 
 ## Under the Hood
 

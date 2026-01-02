@@ -7,7 +7,7 @@ isPublic: true
 type: "News"
 project: "MinionAH"
 pubDate: "May 29, 2025"
-heroImage: "/assets/images/donations/banner.png"
+heroImage: "/assets/images/minionah/donations/banner.png"
 ---
 
 At the time of writing, MinionAH has grown more than I ever imagined. We’ve passed 3,000 users and

@@ -6,7 +6,7 @@ isPublic: true
 type: "Update"
 project: "MinionAH"
 pubDate: "Feb 19, 2025"
-heroImage: "/assets/images/automatic-deletion/banner.png"
+heroImage: "/assets/images/minionah/automatic-deletion/banner.png"
 ---
 
 After having over 600 auctions, it was time to add the much-requested feature of bumping auctions.
@@ -22,7 +22,7 @@ deleted after 14 days.
 
 <div class="border border-border rounded-lg p-4">
   <video muted={true} loop={true} autoPlay={true} class="max-h-96 mx-auto" alt="Bumping">
-    <source src="/assets/videos/automatic-deletion/bumping.mp4" type="video/mp4"/>
+    <source src="/assets/videos/minionah/automatic-deletion/bumping.mp4" type="video/mp4"/>
   </video>
 </div>
 

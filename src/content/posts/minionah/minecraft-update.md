@@ -7,7 +7,7 @@ isPublic: true
 type: "Update"
 project: "MinionAH"
 pubDate: "December 17, 2023"
-heroImage: "/assets/images/minecraft-update/banner.png"
+heroImage: "/assets/images/minionah/minecraft-update/banner.png"
 classes: "object-contain!"
 ---
 
@@ -52,7 +52,7 @@ This password will be used to log in to MinionAH in the future, so you don't hav
 whole process again.
 
 <div class="border-border rounded-lg border p-4">
-  <img src="/assets/images/minecraft-update/loginPage.png" class="mx-auto max-h-192" alt="Login page" />
+  <img src="/assets/images/minionah/minecraft-update/loginPage.png" class="mx-auto max-h-192" alt="Login page" />
 </div>
 
 ## Redesigned Elements
@@ -62,7 +62,7 @@ accessible, and more consistent with the rest of the website.
 
 For example, we have redesigned the minion creation form on the profile page:
 
-<BeforeAfter before="/assets/images/chat-update/profileAfter.png" after="/assets/images/minecraft-update/profileAfter.png" />
+<BeforeAfter before="/assets/images/minionah/chat-update/profileAfter.png" after="/assets/images/minionah/minecraft-update/profileAfter.png" />
 <span class="not-prose mx-auto block text-center text-xs">Click on the before/after buttons to see the changes.</span>
 The tier selector is now disabled by default until you select a minion. Once you do, the tier selector will be updated to have a maximum amount of tiers, 11 or 12, depending on the minion.
 
@@ -71,7 +71,7 @@ information to them when needed.
 
 <div class="border-border rounded-lg border p-4">
   <video muted={true} loop={true} autoPlay={true} class="mx-auto h-full! max-h-96" alt="profile page">
-    <source src="/assets/videos/minecraft-update/profilePage.mp4" type="video/mp4" />
+    <source src="/assets/videos/minionah/minecraft-update/profilePage.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -83,7 +83,7 @@ the minion. This feature has been heavily inspired by the
 (NEU)</a> mod.
 
 <div class="border-border rounded-lg border p-4">
-  <img src="/assets/images/minecraft-update/craftCost.png" class="mx-auto max-h-96" alt="craft cost" />
+  <img src="/assets/images/minionah/minecraft-update/craftCost.png" class="mx-auto max-h-96" alt="craft cost" />
 </div>
 
 Unfortunately, since the project is hosted on Vercel's Hobby plan, we can only have cron jobs that

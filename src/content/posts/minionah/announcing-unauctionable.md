@@ -5,7 +5,7 @@ isPublic: true
 type: "Announcement"
 project: "Unauctionable"
 pubDate: "July 17, 2025"
-heroImage: "/assets/images/announcing-unauctionable/banner.avif"
+heroImage: "/assets/images/minionah/announcing-unauctionable/banner.avif"
 ---
 
 MinionAH turned 2 years old on July 9th, 2025. That was the day the very first lines of code were

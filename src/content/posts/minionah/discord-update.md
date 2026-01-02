@@ -5,7 +5,7 @@ isPublic: true
 type: "Update"
 project: "MinionAH"
 pubDate: "May 10, 2025"
-heroImage: "/assets/images/discord-update/banner.png"
+heroImage: "/assets/images/minionah/discord-update/banner.png"
 ---
 
 <script lang="ts">
@@ -28,14 +28,14 @@ To link your Discord account, go to your [profile settings](https://minionah.com
 click on "Connect your Discord account", follow the instructions, and you're good to go!
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/discord-update/profile-settings-before.png" class="max-h-192 mx-auto" alt="Profile settings before"/>
+  <img src="/assets/images/minionah/discord-update/profile-settings-before.png" class="max-h-192 mx-auto" alt="Profile settings before"/>
 </div>
 
 If you're skeptical about this integration, Discord will show you exactly which permissions we
 request. If you're uncomfortable with any of them, you don't have to link your account.
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/discord-update/profile-settings-after.png" class="max-h-192 mx-auto" alt="Profile settings after"/>
+  <img src="/assets/images/minionah/discord-update/profile-settings-after.png" class="max-h-192 mx-auto" alt="Profile settings after"/>
 </div>
 
 ## Notifications
@@ -46,20 +46,20 @@ user-friendly.
 We've removed the combined “Email & Device” option and also the "None" option. Instead, you can now
 simply check or uncheck the methods you want to use to receive notifications.
 
-<BeforeAfter before="/assets/images/discord-update/notifications-before.png" after="/assets/images/discord-update/notifications-after.png" />
+<BeforeAfter before="/assets/images/minionah/discord-update/notifications-before.png" after="/assets/images/minionah/discord-update/notifications-after.png" />
 
 As you can see, we've also added a new option: "Discord". This allows you to receive notifications
 on Discord whenever you get a new message on MinionAH.
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/discord-update/discord-notification.png" class="max-h-192 mx-auto" alt="Discord notification"/>
+  <img src="/assets/images/minionah/discord-update/discord-notification.png" class="max-h-192 mx-auto" alt="Discord notification"/>
 </div>
 
 Some notification options require additional setup. You can click the warning icon (⚠️) to see what
 needs to be done and also test if everything is working as expected.
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/discord-update/additional-setup.png" class="max-h-192 mx-auto" alt="Additional setup"/>
+  <img src="/assets/images/minionah/discord-update/additional-setup.png" class="max-h-192 mx-auto" alt="Additional setup"/>
 </div>
 
 ## Discord Bot
@@ -75,7 +75,7 @@ You can use the bot to:
 - And more features are coming soon!
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/discord-update/bot-discovery.png" class="max-h-192 mx-auto" alt="Bot discovery"/>
+  <img src="/assets/images/minionah/discord-update/bot-discovery.png" class="max-h-192 mx-auto" alt="Bot discovery"/>
 </div>
 
 You can
@@ -88,18 +88,18 @@ We've also made several smaller improvements and bug fixes. One of them is the n
 option on the auction creation page.
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/discord-update/negotiable-option.png" class="max-h-192 mx-auto" alt="Negotiable option"/>
+  <img src="/assets/images/minionah/discord-update/negotiable-option.png" class="max-h-192 mx-auto" alt="Negotiable option"/>
 </div>
 
 This indicates that you're open to negotiation on the price of your auction.
 
 <div class="border border-border rounded-lg p-4">
-  <img src="/assets/images/discord-update/negotiable-icon.png" class="max-h-192 mx-auto" alt="Negotiable icon"/>
+  <img src="/assets/images/minionah/discord-update/negotiable-icon.png" class="max-h-192 mx-auto" alt="Negotiable icon"/>
 </div>
 
 We've also replaced the Skyblock coin icon with one that better fits the rest of the site's design.
 
-<BeforeAfter before="/assets/images/discord-update/coin-icon-before.png" after="/assets/images/discord-update/coin-icon-after.png" />
+<BeforeAfter before="/assets/images/minionah/discord-update/coin-icon-before.png" after="/assets/images/minionah/discord-update/coin-icon-after.png" />
 
 ## Notes
 
