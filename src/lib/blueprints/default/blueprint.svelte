@@ -59,16 +59,16 @@
     <div class="mx-auto mt-0 mb-5 max-w-2xl">
       <div class="mx-auto">
         <div class="relative z-50 text-xs font-bold text-neutral-300">
-          <div class="relative z-50 flex flex-wrap items-center gap-2">
-            {#if project}
+          {#if project}
+            <div class="relative z-50 flex flex-wrap items-center gap-2">
               <span
                 class="bg-primary text-primary-foreground rounded-full px-2.5 py-0.5 text-xs font-semibold">
                 {project}
               </span>
-            {/if}
-            <span class="uppercase">{type}</span>
-          </div>
+            </div>
+          {/if}
           <span class="relative z-50 mt-1 block text-sm font-semibold">
+            <span class="uppercase">{type} —</span>
             <FormattedDate date={pubDate} />
           </span>
         </div>
