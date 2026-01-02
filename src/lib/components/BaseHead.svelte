@@ -18,14 +18,14 @@
   <link rel="canonical" href={canonicalURL.href} />
 
   <!-- Primary Meta Tags -->
-  <title>{title} — MinionAH Newsroom</title>
+  <title>{title} — Tonantzintla Newsroom</title>
   <!-- <ClientRouter /> -->
   <meta name="title" content={title} />
   <meta name="description" content={description} />
 
   <!-- Open Graph -->
   <meta property="og:url" content={page.url.href} />
-  <meta property="og:title" content={`${title} — MinionAH Newsroom`} />
+  <meta property="og:title" content={`${title} — Tonantzintla Newsroom`} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={image} />
   <meta property="og:image:secure_url" content={image} />

@@ -9,11 +9,11 @@
 <footer class="text-accent p-4 text-center">
   <div class="divide-accent mb-2 flex justify-center divide-x">
     <a
-      href="https://minionah.com"
+      href="https://tonantzintla.org"
       target="_blank"
       rel="noopener"
       class="hover:text-muted-foreground px-4 underline-offset-2 transition-colors duration-300"
-      >MinionAH</a>
+      >Tonantzintla</a>
     <a
       href={resolve("/[slug]", { slug: "privacy-policy" })}
       class={cn(
@@ -27,5 +27,5 @@
         { underline: url === "/terms-of-service" }
       )}>Terms of Service</a>
   </div>
-  &copy; {new Date().getFullYear()} MinionAH. All rights reserved.
+  &copy; {new Date().getFullYear()} Tonantzintla. All rights reserved.
 </footer>
