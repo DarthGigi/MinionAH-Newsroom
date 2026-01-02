@@ -27,6 +27,7 @@ export const entries: EntryGenerator = () => {
     const slug = path
       .replace("/src/content/", "")
       .replace("misc/", "")
+      .replace(/^posts\/[^/]+\//, "")
       .replace("posts/", "")
       .replace(".md", "")
       .replace("/index", "");

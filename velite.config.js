@@ -22,8 +22,11 @@ const baseSchema = s.object({
 });
 
 const postSchema = baseSchema.transform((data) => {
-  // Remove 'posts/' and 'misc/' prefix from the path to create clean URLs
-  const cleanSlug = data.path.replace(/^posts\//, "").replace(/^misc\//, "");
+  const cleanSlug = data.path
+    .replace(/^posts\//, "")
+    .replace(/^misc\//, "")
+    .replace(/^minionah\//, "")
+    .replace(/^tonantzintla\//, "");
   return {
     ...data,
     slug: cleanSlug,
@@ -42,10 +45,12 @@ export default defineConfig({
     },
   },
   prepare: ({ posts }) => {
-    // Remove the 'posts/' and 'misc/' prefixes from the path of each post
     posts.forEach((post) => {
-      post.path = post.path.replace(/^posts\//, "");
-      post.path = post.path.replace(/^misc\//, "");
+      post.path = post.path
+        .replace(/^posts\//, "")
+        .replace(/^misc\//, "")
+        .replace(/^minionah\//, "")
+        .replace(/^tonantzintla\//, "");
     });
   },
 });

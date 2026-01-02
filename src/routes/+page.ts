@@ -11,7 +11,11 @@ export const load = (async () => {
     Object.entries(files).map(async ([path, file]) => {
       const { metadata } = await file();
       return {
-        slug: path.replace("/src/content/posts/", "").replace(".md", "").replace("/index", ""),
+        slug: path
+          .replace("/src/content/posts/", "")
+          .replace(/^(minionah|tonantzintla)\//, "")
+          .replace(".md", "")
+          .replace("/index", ""),
         metadata,
       };
     })
