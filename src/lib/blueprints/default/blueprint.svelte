@@ -40,7 +40,7 @@
     children: Snippet;
   } = $props();
 
-  const { description, heroImage, pubDate, title, type } = $derived(metadata);
+  const { description, heroImage, pubDate, title, type, project } = $derived(metadata);
 
   const posts = getAllPosts()
     .filter((post) => post.isPublic !== false)
@@ -59,7 +59,15 @@
     <div class="mx-auto mt-0 mb-5 max-w-2xl">
       <div class="mx-auto">
         <div class="relative z-50 text-xs font-bold text-neutral-300">
-          <span class="relative z-50 block uppercase">{type}</span>
+          <div class="relative z-50 flex flex-wrap items-center gap-2">
+            {#if project}
+              <span
+                class="bg-primary text-primary-foreground rounded-full px-2.5 py-0.5 text-xs font-semibold">
+                {project}
+              </span>
+            {/if}
+            <span class="uppercase">{type}</span>
+          </div>
           <span class="relative z-50 mt-1 block text-sm font-semibold">
             <FormattedDate date={pubDate} />
           </span>
