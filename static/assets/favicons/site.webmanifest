@@ -1,19 +1,21 @@
 {
-  "name": "Minion Auction House Newsroom",
-  "short_name": "Minion AH Newsroom",
+  "name": "Tonantzintla Newsroom",
+  "short_name": "Newsroom",
   "icons": [
     {
-      "src": "/assets/images/favicons/android-chrome-192x192.png",
+      "src": "/assets/favicons/web-app-manifest-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
-      "src": "/assets/images/favicons/android-chrome-256x256.png",
-      "sizes": "256x256",
-      "type": "image/png"
+      "src": "/assets/favicons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "theme_color": "#171717",
-  "background_color": "#171717",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "display": "standalone"
 }
