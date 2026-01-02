@@ -16,9 +16,9 @@
   <DropdownMenu.Trigger class="hover:bg-popover group flex items-center gap-2 rounded-md px-4 py-2">
     <img
       class="pointer-events-none block h-8 w-auto transition-transform duration-300 ease-in-out group-data-[state=open]:rotate-45 max-md:group-data-[state=open]:-rotate-45"
-      src="/assets/favicons/favicon.png"
-      alt="MinionAH Logo" />
-    <h1>Newsroom<span class="sr-only">: The Auction House for SkyBlock Minions</span></h1>
+      src="/assets/favicons/favicon.svg"
+      alt="Tonantzintla Logo" />
+    <h1>Newsroom</h1>
     <ChevronDown class="h-4 w-4" />
   </DropdownMenu.Trigger>
   <DropdownMenu.Content class="border-border bg-popover w-44">
