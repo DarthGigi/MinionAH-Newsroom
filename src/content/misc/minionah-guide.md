@@ -24,7 +24,7 @@ It will be updated as new features are added to MinionAH, so make sure to check 
 
 When you open up MinionAH, you will be greeted with all the minions that are on MinionAH.
 
-![MinionAH Homepage](/assets/images/minionah-guide/homepage.png)
+![MinionAH Homepage](/assets/images/minionah/minionah-guide/homepage.png)
 
 At a glance, you see all the important information about the auction: the tier, price, and amount of
 minions.
@@ -35,13 +35,13 @@ of minions. It also reveals the share and eye icons.
 Clicking the buy button will start a chat with the user who put the auction up, so you can agree on
 a time to trade.
 
-![MinionAH Auction Hover](/assets/images/minionah-guide/card-hover.png)
+![MinionAH Auction Hover](/assets/images/minionah/minionah-guide/card-hover.png)
 
 Clicking the share icon will copy the link to your auction which you can use to share with others
 with a beautiful embed. MinionAH will generate a unique image for your embed with all the important
 information on demand!
 
-![MinionAH Embed](/assets/images/minionah-guide/embed.png)
+![MinionAH Embed](/assets/images/minionah/minionah-guide/embed.png)
 
 Hovering over a minion will show some useful information, the date the auction was created, and the
 craft cost of the minion (inspired by [NEU](https://github.com/NotEnoughUpdates/NotEnoughUpdates)).
@@ -49,7 +49,7 @@ craft cost of the minion (inspired by [NEU](https://github.com/NotEnoughUpdates/
 Clicking the minion or the info icon will take you to the wiki page of the minion, the search icon
 will automatically search for the same minion type.
 
-![MinionAH Minion Hover](/assets/images/minionah-guide/minion-hover.png)
+![MinionAH Minion Hover](/assets/images/minionah/minionah-guide/minion-hover.png)
 
 Hovering over a user will also show the last time the user was online. Clicking the user will take
 you to their MinionAH profile, where you can see all the minions that the user has on auction.
@@ -57,14 +57,14 @@ you to their MinionAH profile, where you can see all the minions that the user h
 Clicking the info icon will take you to their SkyCrypt and the chat icon will start a chat between
 you and the user.
 
-![MinionAH User Hover](/assets/images/minionah-guide/user-hover.png)
+![MinionAH User Hover](/assets/images/minionah/minionah-guide/user-hover.png)
 
 ## Profile
 
 After signing in with your MinionAH account, you can access your profile where you can view all the
 minions you have put up for auction, create a new auction, and delete your auctions.
 
-![MinionAH Profile](/assets/images/minionah-guide/profile.png)
+![MinionAH Profile](/assets/images/minionah/minionah-guide/profile.png)
 
 ## Creating auctions
 
@@ -74,11 +74,11 @@ the tier, enter the amount of minions, and lastly fill in the price of the minio
 If your minions are mithril infused, you can simply toggle the switch and your auction will display
 the mithril infusion icon.
 
-![MinionAH Choose Minion](/assets/images/minionah-guide/choose-minion.png)
+![MinionAH Choose Minion](/assets/images/minionah/minionah-guide/choose-minion.png)
 
 ---
 
-![MinionAH Create Auction](/assets/images/minionah-guide/create-auction.png)
+![MinionAH Create Auction](/assets/images/minionah/minionah-guide/create-auction.png)
 
 ## Purchasing minions
 
@@ -86,7 +86,7 @@ To purchase a minion, simply start a chat with the user by clicking the purchase
 auctions:
 
 <video muted={true} loop={true} playsinline={true} autoPlay={true} class="mx-auto max-h-96 rounded-lg" alt="Purchase">
-  <source src="/assets/videos/minionah-guide/purchase.mp4" type="video/mp4" />
+  <source src="/assets/videos/minionah/minionah-guide/purchase.mp4" type="video/mp4" />
 </video>
 
 Then, discuss the date and time you want to trade the minions.
@@ -95,7 +95,7 @@ The next time they visit MinionAH, they will see a notification that you have me
 they have offline notifications enabled, they will even get notifications when they're offline
 (offline notifications are coming soon).
 
-![MinionAH Chat](/assets/images/minionah-guide/chat.png)
+![MinionAH Chat](/assets/images/minionah/minionah-guide/chat.png)
 
 ## QOL Features
 
@@ -104,7 +104,7 @@ MinionAH has a ton of smaller, but equally important features.
 For example, you can customize your experience of MinionAH by using the Preferences feature, which
 allows you to change the font of the website and toggle the use of Roman numerals for minion tiers.
 
-![MinionAH Preferences](/assets/images/minionah-guide/preferences.png)
+![MinionAH Preferences](/assets/images/minionah/minionah-guide/preferences.png)
 
 There are too many features to include in this guide and new features are constantly being added, so
 the best way to discover them is to use MinionAH yourself!
