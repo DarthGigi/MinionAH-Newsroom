@@ -3,6 +3,7 @@ title: "The Discord Update"
 description: "We've integrated Discord into MinionAH, released a bot, and more!"
 isPublic: true
 type: "Update"
+project: "MinionAH"
 pubDate: "May 10, 2025"
 heroImage: "/assets/images/discord-update/banner.png"
 ---

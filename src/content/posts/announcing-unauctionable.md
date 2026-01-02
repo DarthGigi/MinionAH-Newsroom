@@ -3,6 +3,7 @@ title: "Announcing Unauctionable"
 description: "The future of MinionAH, next steps, and what to expect."
 isPublic: true
 type: "Announcement"
+project: "Unauctionable"
 pubDate: "July 17, 2025"
 heroImage: "/assets/images/announcing-unauctionable/banner.avif"
 ---

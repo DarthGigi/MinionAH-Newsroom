@@ -5,6 +5,7 @@ description:
   lot of bugs."
 isPublic: true
 type: "Release"
+project: "MinionAH"
 pubDate: "June 10, 2024"
 heroImage: "/assets/images/minionah-v2/banner.png"
 classes: "object-contain"

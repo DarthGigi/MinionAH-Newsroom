@@ -5,6 +5,7 @@ description:
   updates. Read more about it here."
 isPublic: true
 type: "Update"
+project: "MinionAH"
 pubDate: "November 14, 2023"
 heroImage: "/assets/images/chat-update/banner.png"
 ---

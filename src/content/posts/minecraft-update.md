@@ -5,6 +5,7 @@ description:
   redesigns elements, and adds QOL features. Read more about it here."
 isPublic: true
 type: "Update"
+project: "MinionAH"
 pubDate: "December 17, 2023"
 heroImage: "/assets/images/minecraft-update/banner.png"
 classes: "object-contain!"

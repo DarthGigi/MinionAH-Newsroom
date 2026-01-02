@@ -5,6 +5,7 @@ description:
   tier. Read more about it here."
 isPublic: true
 type: "Update"
+project: "MinionAH"
 pubDate: "July 6, 2024"
 heroImage: "/assets/images/pricechecker-update/banner.png"
 ---

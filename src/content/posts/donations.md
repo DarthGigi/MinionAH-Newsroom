@@ -5,6 +5,7 @@ description:
   services."
 isPublic: true
 type: "News"
+project: "MinionAH"
 pubDate: "May 29, 2025"
 heroImage: "/assets/images/donations/banner.png"
 ---

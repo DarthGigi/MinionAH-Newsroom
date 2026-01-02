@@ -1,4 +1,5 @@
 ---
+project: "MinionAH"
 title: "Introducing the MinionAH Newsroom"
 description:
   "Introducing MinionAH Newsroom, our new site dedicated to keeping you up-to-date about our latest

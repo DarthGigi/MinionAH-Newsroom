@@ -5,6 +5,7 @@ description:
   performance, and adds QOL features. Read more about it here."
 isPublic: true
 type: "Update"
+project: "MinionAH"
 pubDate: "January 20, 2024"
 heroImage: "/assets/images/squashing-bugs-update/banner.png"
 ---

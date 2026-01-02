@@ -4,6 +4,7 @@ description:
   "We've added the much-requested feature of bumping auctions and automatic deletion of auctions."
 isPublic: true
 type: "Update"
+project: "MinionAH"
 pubDate: "Feb 19, 2025"
 heroImage: "/assets/images/automatic-deletion/banner.png"
 ---

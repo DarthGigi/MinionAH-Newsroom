@@ -1,4 +1,5 @@
 ---
+project: "MinionAH"
 title: "Introducing MinionAH"
 description: "Introducing MinionAH Newsroom — The Auction House for Hypixel Skyblock Minions"
 isPublic: true

@@ -5,6 +5,7 @@ description:
   performance updates and some under-the-hood changes. Read more about it here."
 isPublic: true
 type: "Update"
+project: "MinionAH"
 pubDate: "December 4, 2023"
 heroImage: "/assets/images/microsoft-update/banner.png"
 ---
