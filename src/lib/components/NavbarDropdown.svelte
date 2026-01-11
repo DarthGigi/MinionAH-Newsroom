@@ -41,7 +41,7 @@
       </DropdownMenu.Item>
       <DropdownMenu.Item class="data-highlighted:bg-background gap-1.5 hover:cursor-pointer">
         {#snippet child({ props })}
-          <a href="https://discord.minionah.com" target="_blank" {...props}>
+          <a href="https://discord.tonantzintla.org" target="_blank" {...props}>
             <Users class="size-4" />Community
           </a>
         {/snippet}

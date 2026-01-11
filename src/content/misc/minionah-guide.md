@@ -112,7 +112,7 @@ the best way to discover them is to use MinionAH yourself!
 ## Community
 
 We also have a community server where you can hang out with other users, share your minions, and
-much more! Feel free to join our [Discord server](https://discord.minionah.com).
+much more! Feel free to join our [Discord server](https://discord.tonantzintla.org).
 
 ## Privacy, Data and Transparency
 

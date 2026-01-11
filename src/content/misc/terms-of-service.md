@@ -51,7 +51,7 @@ By using MinionAH, you agree to comply with these terms and conditions and our
 MinionAH welcomes user feedback and suggestions for improving MinionAH. You can provide feedback and
 report issues in one of the following ways:
 
-- [Discord server](https://discord.minionah.com)
+- [Discord server](https://discord.tonantzintla.org)
 - [GitHub issues](https://github.com/DarthGigi/MinionAH/issues)
 - [Email](mailto:contact@minionah.com)
 

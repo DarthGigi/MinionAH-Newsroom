@@ -55,7 +55,7 @@ work on MinionAH.
 
 ### 🌐 Community
 
-<a href="https://discord.minionah.com" target="_blank">
+<a href="https://discord.tonantzintla.org" target="_blank">
   <img src="https://discordapp.com/api/guilds/1133219625497284638/widget.png?style=banner3" class="max-w-[320px] mx-auto max-h-[140px]" alt="Discord Server" />
 </a>
 

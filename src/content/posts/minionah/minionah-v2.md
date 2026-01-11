@@ -226,7 +226,7 @@ by a lot
 
 This update has been in the works for a long time, and we are really happy with how it turned out.
 We hope you enjoy the new features and improvements as much as we do. If you have any feedback or
-suggestions, feel free to let us know on the [Discord server](https://discord.minionah.com).
+suggestions, feel free to let us know on the [Discord server](https://discord.tonantzintla.org).
 
 We are working on some big, exciting stuff that we can't share yet, but it's gonna be awesome!
 

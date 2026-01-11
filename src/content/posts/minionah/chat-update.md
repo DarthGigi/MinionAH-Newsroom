@@ -174,6 +174,6 @@ after="/assets/videos/minionah/chat-update/loadMoreButtonAfter.mp4" />
   from happening in the future and to be able to thoroughly test the changes before they go live.
 
 - Any future updates, announcements, changes, etc. will be posted on this website and the link will
-  be posted in the <a href="https://discord.minionah.com" target="_blank">Discord server</a> and the
-  <a href="https://hypixel.net/members/mrgigi.4185364/#recent-content" target="_blank">Hypixel
+  be posted in the <a href="https://discord.tonantzintla.org" target="_blank">Discord server</a> and
+  the <a href="https://hypixel.net/members/mrgigi.4185364/#recent-content" target="_blank">Hypixel
   Forums</a>.
