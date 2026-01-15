@@ -46,7 +46,7 @@
     "prettier-plugin-tailwindcss": "^0.7.2",
     "rehype-external-links": "^3.0.0",
     "remark-toc": "^9.0.0",
-    "svelte": "^5.46.1",
+    "svelte": "^5.46.4",
     "svelte-check": "^4.3.5",
     "tailwind-merge": "^3.4.0",
     "tailwind-variants": "^3.2.2",
